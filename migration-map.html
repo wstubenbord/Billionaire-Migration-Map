@@ -1,0 +1,1354 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Billionaire Migration</title>
+<script src="./vendor/d3.v7.min.js"></script>
+<script src="./vendor/topojson-client.v3.min.js"></script>
+<style>
+  :root {
+    --color-ocean: #eef3f8;
+    --color-land: #f8fafc;
+    --color-border: #9ca3af;
+    --color-graticule: #d9e2ec;
+    --color-birth: #ef4444;      /* red-500 */
+    --color-residence: #2563eb;  /* blue-600 */
+    --color-arc: #3b82f6;        /* blue-500 */
+    --color-bg: #ffffff;
+    --color-text: #1f2937;
+  }
+  html, body { height:100%; margin:0; font:14px/1.35 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; color:var(--color-text); }
+  #map { display:block; width:100vw; height:100vh; background:var(--color-bg); }
+  .ocean     { fill:var(--color-ocean); }
+  .graticule { fill:none; stroke:var(--color-graticule); stroke-width:.6; opacity:.8; }
+  .land      { fill:var(--color-land); stroke:var(--color-border); stroke-width:.7; vector-effect:non-scaling-stroke; }
+
+  .arc  { fill:none; stroke:var(--color-arc); stroke-opacity:.18; stroke-linecap:round; vector-effect:non-scaling-stroke; }
+  .arc.highlight { stroke-opacity:.45; }
+  .arc.flow { stroke-dasharray:16 10; animation: flow 2.2s linear infinite; stroke-opacity:.6; }
+  .arc.focus { stroke-opacity:.6; }
+  .arc-hit { fill:none; stroke:transparent; stroke-width:10; pointer-events:stroke; vector-effect:non-scaling-stroke; }
+
+  .birth { fill:var(--color-birth); }
+  .res   { fill:var(--color-residence); }
+  .hidden { display:none; }
+
+  #tip { position:fixed; z-index:10; padding:6px 8px; background:var(--color-bg); color:#111827; border:1px solid #cbd5e1; border-radius:4px; box-shadow:0 2px 8px rgba(0,0,0,.08); pointer-events:none; display:none; }
+  #warn { position:fixed; left:10px; bottom:10px; padding:6px 8px; background:#fff7ed; color:#9a3412; border:1px solid #fdba74; border-radius:4px; display:none; }
+  #loading { position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); padding:16px 24px; background:var(--color-bg); border:1px solid #cbd5e1; border-radius:6px; box-shadow:0 4px 12px rgba(0,0,0,.1); font-size:16px; color:var(--color-text); }
+  /* Control panel */
+  #panel {
+    position: fixed; left: 12px; top: 12px;
+    background: #ffffffcc; border: 1px solid #d1d5db; border-radius: 8px;
+    padding: 10px 12px; color:#111827; font-size: 13px; z-index: 30;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08); backdrop-filter: blur(4px);
+    width: 245px;
+    /* Let zoom/pan/wheel pass through panel background */
+    pointer-events: none;
+  }
+  /* Keep form controls interactive inside the panel */
+  #panel input, #panel select, #panel button, #panel label { pointer-events: auto; }
+  #panel h3 { margin: 6px 0 6px; font-size: 13px; color:#111827; }
+  #panel h2 { margin: 4px 0 4px; font-size: 15px; color:#111827; font-weight:600; }
+  #panel .byline { margin: 0 0 6px; font-size: 12px; color:#4b5563; font-style: italic; }
+  #panel .section { margin-bottom: 8px; }
+  #panel .hr { border-top:1px solid #e5e7eb; margin:8px 0; }
+  #panel .section-header { display:flex; align-items:center; justify-content:space-between; gap:8px; }
+  /* Collapsed panel state */
+  #panel.collapsed .section:not(#secTitle) { display:none; }
+  #panel.collapsed #secTitle .byline,
+  #panel.collapsed #secTitle .muted { display:none; }
+  #panel.collapsed .hr { display:none; }
+  #panel.collapsed .section { margin-bottom: 0; }
+  #panel.collapsed { padding-bottom: 6px; }
+  #panel .icon-btn {
+    border: 1px solid #d1d5db; background:#f9fafb; color:#374151; border-radius:4px;
+    padding:2px 6px; font-size:12px; cursor:pointer;
+  }
+  #panel .icon-btn:hover { background:#eef2f7; border-color:#9ca3af; }
+  #panel .icon-btn svg { width:14px; height:14px; display:block; }
+  #panel .icon-btn:disabled { opacity:.4; cursor:not-allowed; }
+
+
+  /* Legend area inside panel */
+  #legend { position: static; background: transparent; border: 0; padding: 0; box-shadow: none; backdrop-filter: none; }
+  #legend .row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 1.3;
+    margin-bottom: 4px;
+  }
+  #legend input[type="checkbox"] {
+    flex-shrink: 0;
+    margin: 0;
+    transform: translateY(-1px);
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+  }
+  #legend .icon {
+    width: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #legend .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #e5e7eb;
+  }
+  #legend .seg {
+    width: 14px;
+    height: 6px;
+    display: inline-block;
+  }
+  #legend .reset, #panel .reset {
+    font: inherit;
+    padding: 5px 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    background: #f3f4f6;
+    color: #111827;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s, transform 0.1s;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+  #legend .reset:hover, #panel .reset:hover {
+    background: #e5e7eb;
+    border-color: #9ca3af;
+  }
+  #legend .reset:active, #panel .reset:active {
+    background: #d1d5db;
+    transform: scale(0.98);
+  }
+  #panel .reset-sm {
+    display: inline-block;
+    width: auto;
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+  #legend hr {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 8px 0 6px;
+  }
+  /* Forms inside panel */
+  .form-row { display:grid; grid-template-columns: 70px 1fr; align-items:center; gap:8px; margin:6px 0; }
+  .row { display:flex; align-items:center; gap:8px; margin:6px 0; }
+  label { margin-right:6px; }
+  select { font:inherit; padding:3px 6px; width:100%; box-sizing:border-box; border-radius:6px; }
+  .muted { color:#6b7280; font-size:12px; overflow-wrap:anywhere; }
+  /* Disabled state dropdown styling */
+  #selState:disabled { opacity: .6; background: #f3f4f6; cursor: not-allowed; }
+  @keyframes flow { to { stroke-dashoffset:-26; } }
+  
+  /* Zoom controls */
+  #zoomCtrl {
+    position: fixed; right: 12px; bottom: 12px; z-index: 25;
+    display: flex; flex-direction: column; gap: 6px;
+  }
+  #zoomCtrl button {
+    width: 36px; height: 36px; border-radius: 6px;
+    border:1px solid #d1d5db; background:#ffffffcc; backdrop-filter: blur(4px);
+    cursor:pointer; font-size:20px; line-height:1; color:#111827;
+    box-shadow: 0 1px 3px rgba(0,0,0,.08);
+  }
+  #zoomCtrl button:hover { background:#f3f4f6; }
+  #zoomCtrl button:active { background:#e5e7eb; }
+  #btnPanelToggle { font-size: 22px; font-weight: 600; line-height: 1; }
+
+/* Print-friendly set-up */
+  @media print {
+    @page { margin: 0; }
+    html, body, #map {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    #panel,
+    #zoomCtrl,
+    #tip,
+    #warn {
+      display: none !important;
+    }
+    html, body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    #map {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      page-break-inside: avoid;
+      background: #ffffff; /* ensure white backdrop */
+    }
+    .ocean { fill: #ffffff !important; }
+    .arc.flow { animation: none !important; }
+  }
+</style>
+</head>
+<body>
+<svg id="map"></svg>
+<div id="tip"></div>
+<div id="warn"></div>
+<div id="loading">Loading map data...</div>
+
+<div id="panel">
+  <div class="section" id="secTitle">
+    <div class="section-header">
+      <h2>Billionaire Migration</h2>
+      <button id="btnPanelToggle" type="button" class="icon-btn" title="Collapse panel" aria-label="Collapse panel" aria-expanded="true">▾</button>
+    </div>
+    <div class="byline">By Wesley Stubenbord </div>
+    <div class="muted">An interactive map of city-level migration flows for 3,103 billionaires from birth to last residence. Residence totals indicate the number who lived there between 2010 and 2025. Details here.</div>
+  </div>
+  <div class="hr"></div>
+  <div class="section" id="secInstructions">
+    <h3>Instructions</h3>
+    <div class="muted">
+      • Click on a city to isolate migration flows<br>
+      • Click background to reset<br>
+      • Mouse over for details <br>
+    </div>
+  </div>
+  <div class="hr"></div>
+  <div class="section" id="secLegend">
+    <div class="section-header">
+      <h3>Legend</h3>
+      <button id="btnResetToggles" type="button" class="icon-btn" title="Restore default toggles" aria-label="Restore default toggles">✕</button>
+    </div>
+    <div id="legend">
+      <div class="row">
+        <input id="chkBirth" type="checkbox" checked>
+        <span class="icon"><span class="dot" style="background:var(--color-birth)"></span></span>
+        <label for="chkBirth">Birthplace</label>
+      </div>
+      <div class="row">
+        <input id="chkRes" type="checkbox" checked>
+        <span class="icon"><span class="dot" style="background:var(--color-residence)"></span></span>
+        <label for="chkRes">Residence</label>
+      </div>
+      <div class="row">
+        <input id="chkArcs" type="checkbox" checked>
+        <span class="icon">
+          <svg class="seg" viewBox="0 0 20 10">
+            <path d="M1,9 Q10,1 19,9" fill="none" stroke="var(--color-arc)" stroke-width="2" opacity="0.9" stroke-linecap="round"></path>
+          </svg>
+        </span>
+        <label for="chkArcs">Migration path</label>
+      </div>
+    </div>
+  </div>
+  <div class="hr"></div>
+  <div class="section" id="secFiltering">
+    <div class="section-header">
+      <h3>Filtering</h3>
+      <button id="btnClearFilter" type="button" class="icon-btn" title="Remove filter" aria-label="Remove filter">✕</button>
+    </div>
+    <div class="row nowrap">
+      <strong>Filter by:</strong>
+      <label><input type="radio" name="filterMode" id="filterBirth" value="birth"> Birth</label>
+      <label><input type="radio" name="filterMode" id="filterRes" value="res" checked> Residence</label>
+    </div>
+    <div class="form-row">
+      <label for="selCountry">Country</label>
+      <select id="selCountry">
+        <option value="">All</option>
+      </select>
+    </div>
+    <div class="form-row" id="stateRow">
+      <label for="selState">State</label>
+      <select id="selState" disabled>
+        <option value="">All States</option>
+      </select>
+    </div>
+  </div>
+  <div class="hr"></div>
+  <div class="section" id="secReset">
+    <button id="btnResetAll" type="button" class="reset">Reset All</button>
+  </div>
+</div>
+
+<!-- Zoom controls -->
+<div id="zoomCtrl" aria-label="Map zoom controls">
+  <button id="btnZoomIn"  title="Zoom in"  aria-label="Zoom in">+</button>
+  <button id="btnZoomOut" title="Zoom out" aria-label="Zoom out">−</button>
+  <button id="btnZoomReset" title="Reset view" aria-label="Reset view">⤢</button>
+  
+</div>
+
+<script>
+// ============================================================================
+// CONFIGURATION CONSTANTS
+// ============================================================================
+const CONFIG = {
+  // Arc stroke width scaling based on flow volume
+  FLOW_WIDTH: { MIN: 0.8, MAX: 3 },
+  
+  // Dot radius scaling based on city count
+  DOT_RADIUS: { MIN: 3, MAX: 26 },
+  
+  // Zoom configuration
+  ZOOM: {
+    MIN: 1,
+    MAX: 24,
+    // Exponential factor for dot scaling during zoom (smaller = dots shrink less)
+    SCALE_EXPONENT: 0.8
+  },
+  
+  // Arc opacity adjusts with zoom level
+  OPACITY: {
+    BASE: 0.18,           // Base opacity at zoom=1
+    ZOOM_FACTOR: 0.04,    // How much to increase per zoom level
+    MAX_INCREASE: 0.3     // Maximum additional opacity from zoom
+  },
+  
+  // Resize debounce delay in milliseconds
+  RESIZE_DEBOUNCE_MS: 150
+};
+
+// ============================================================================
+// UTILITY FUNCTIONS
+// ============================================================================
+
+// Debounce function to limit resize event frequency
+function debounce(func, wait) {
+  let timeout;
+  return function executedFunction(...args) {
+    const later = () => {
+      clearTimeout(timeout);
+      func(...args);
+    };
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+  };
+}
+
+// Sanitize HTML to prevent XSS attacks in tooltips
+function escapeHtml(text) {
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
+}
+
+// Formatting helpers for tooltips
+const nf = new Intl.NumberFormat('en-US');
+const plural = (n, word) => `${nf.format(n)} ${word}${n === 1 ? '' : 's'}`;
+
+// Create a unique flow key from birth and residence locations
+function createFlowKey(from, to) {
+  return JSON.stringify([from, to]);
+}
+
+// ============================================================================
+// DATA LOADING AND PROCESSING
+// ============================================================================
+
+// Fetch helper with clearer parse errors (helps diagnose local-file issues)
+async function fetchJSON(url){
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`Failed to fetch ${url}: ${res.status} ${res.statusText}`);
+  const text = await res.text();
+  try {
+    return JSON.parse(text);
+  } catch (e) {
+    const preview = text.slice(0, 80).replace(/\s+/g, ' ').trim();
+    throw new Error(`Parse error for ${url}: ${e.message}. Preview: ${preview}`);
+  }
+}
+
+async function loadPeopleCSV() {
+  const res = await fetch('./data/migration_map.csv');
+  if (!res.ok) throw new Error(`Failed to load CSV: ${res.status} ${res.statusText}`);
+  
+  const text = await res.text();
+  const rows = d3.csvParse(text);
+  
+  const n = s => (s ?? '').trim();
+  const num = v => (v === '' || v == null ? NaN : +v);
+  
+  const people = rows.map(r => {
+    const birth = n(r['birth']);
+    const resName = n(r['res']);
+    const bLat = num(r['birth.lat']);
+    const bLon = num(r['birth.long']);
+    const rLat = num(r['res.lat']);
+    const rLon = num(r['res.long']);
+    const birthCountry = n(r['birth.country']);
+    const birthState   = n(r['birth.state']);
+    const resCountry   = n(r['res.country']);
+    const resState     = n(r['res.state']);
+    return {
+      birthName: birth,
+      resName,
+      birthLL:[bLon,bLat], resLL:[rLon,rLat],
+      birthCountry, birthState,
+      resCountry, resState
+    };
+  }).filter(p =>
+    p.birthName && p.resName &&
+    Number.isFinite(p.birthLL[0]) && Number.isFinite(p.birthLL[1]) &&
+    Number.isFinite(p.resLL[0])   && Number.isFinite(p.resLL[1])
+  );
+  
+  if (people.length === 0) {
+    throw new Error('No valid migration data found in CSV');
+  }
+  
+  return people;
+}
+
+function aggregateBR(people){
+  const map = new Map();
+  for (const p of people){
+    const k = createFlowKey(p.birthName, p.resName);
+    if (!map.has(k)) {
+      map.set(k, { 
+        from: p.birthName, 
+        to: p.resName, 
+        fromLL: p.birthLL, 
+        toLL: p.resLL, 
+        fromCountry: p.birthCountry,
+        fromState: p.birthState,
+        toCountry: p.resCountry,
+        toState: p.resState,
+        value: 0 
+      });
+    }
+    map.get(k).value++;
+  }
+  return [...map.values()];
+}
+
+// ============================================================================
+// SVG SETUP
+// ============================================================================
+
+const svg = d3.select("#map");
+const rootG = svg.append("g");
+const baseG = rootG.append("g").attr("id","basemap");
+const arcsG = rootG.append("g").attr("id","arcs");
+const hitsG = rootG.append("g").attr("id","arcHits");
+const birthG = rootG.append("g").attr("id","birthLayer");
+const resG = rootG.append("g").attr("id","resLayer");
+
+let projection = d3.geoNaturalEarth1();
+let path = d3.geoPath().projection(projection);
+
+// ============================================================================
+// TOOLTIP MANAGEMENT
+// ============================================================================
+
+const tip = document.getElementById('tip');
+
+function showTipAt(html, x, y){
+  tip.innerHTML = html;
+  tip.style.display = 'block';
+  const pad = 12;
+  const r = tip.getBoundingClientRect();
+  tip.style.left = Math.min(x + pad, innerWidth - r.width - pad) + 'px';
+  tip.style.top  = Math.min(y + pad, innerHeight - r.height - pad) + 'px';
+}
+
+const showTip = (html, evt) => showTipAt(html, evt.clientX, evt.clientY);
+const hideTip = () => tip.style.display='none';
+
+// ============================================================================
+// SCALING FUNCTIONS
+// ============================================================================
+
+const getK = () => d3.zoomTransform(svg.node()).k || 1;
+
+// Global scale - will be initialized after data processing
+let rScale;
+
+function cityRadius(d, k = getK()) {
+  if (!rScale) return 5; // Fallback if called before rScale is initialized
+  const baseRadius = rScale(d.count);
+  // Dots shrink with zoom but not linearly, using power function
+  const scaledRadius = baseRadius / Math.pow(k, CONFIG.ZOOM.SCALE_EXPONENT);
+  return Math.max(scaledRadius, 1); // Minimum 1px radius
+}
+
+function sizeDotsForK(k = getK()){
+  birthG.selectAll("circle").attr("r", d => cityRadius(d, k));
+  resG.selectAll("circle").attr("r", d => cityRadius(d, k));
+}
+
+function getArcOpacity(k) {
+  return CONFIG.OPACITY.BASE + Math.min((k - 1) * CONFIG.OPACITY.ZOOM_FACTOR, CONFIG.OPACITY.MAX_INCREASE);
+}
+
+// ============================================================================
+// MAIN APPLICATION
+// ============================================================================
+
+(async function(){
+  const warn = document.getElementById('warn');
+  const loading = document.getElementById('loading');
+  
+  let people = [];
+  try {
+    people = await loadPeopleCSV();
+    // Update description with dynamic count of represented rows
+    const descEl = document.querySelector('#secTitle .muted');
+    if (descEl && Array.isArray(people)) {
+      const num = nf.format(people.length);
+      descEl.textContent = `An interactive map of city-level migration flows for ${num} billionaires from birth to last residence. Residence totals indicate the number who lived there between 2010 and 2025. Details here.`;
+    }
+  } catch(e) {
+    warn.textContent = `Error: ${e.message}`;
+    warn.style.display = 'block';
+    loading.style.display = 'none';
+    return; // Exit early if data load fails
+  }
+
+  // Load basemap data
+  let world, land, us, states;
+  try {
+    world = await fetchJSON("./data/countries-110m.json");
+    land = topojson.feature(world, world.objects.countries);
+    us = await fetchJSON("./data/states-10m.json");
+    states = topojson.feature(us, us.objects.states);
+  } catch(e) {
+    warn.textContent = `Error loading map: ${e.message}`;
+    warn.style.display = 'block';
+    loading.style.display = 'none';
+    return;
+  }
+
+  loading.style.display = 'none';
+
+  const sphere  = baseG.append("path").attr("class","ocean sphere");
+  const grat    = baseG.append("path").attr("class","graticule");
+  // Multi-resolution land layers
+  const landG110 = baseG.append("g").attr("id","land110");
+  const landG50  = baseG.append("g").attr("id","land50").attr("display","none");
+  const statesG  = baseG.append("g").attr("id","states");
+
+  // Initial 110m land paths
+  let land110 = land; // from initial load
+  let land50 = null;  // lazily loaded later
+  let land50Loading = false;
+  landG110.selectAll("path").data(land110.features).join("path").attr("class","land");
+  statesG.selectAll("path").data(states.features).join("path").attr("class","land");
+
+  const DETAIL_THRESHOLD = 1.6;
+
+  async function ensureLand50(){
+    if (land50 || land50Loading) return;
+    land50Loading = true;
+    try {
+      const world50 = await fetch("./data/countries-50m.json").then(r=>r.json());
+      land50 = topojson.feature(world50, world50.objects.countries);
+      landG50.selectAll("path").data(land50.features).join("path").attr("class","land").attr("d", path);
+    } finally {
+      land50Loading = false;
+    }
+  }
+
+  // ============================================================================
+  // STATE MANAGEMENT
+  // ============================================================================
+  
+  let flowsBR, arcSel, widthScale;
+  const birthMap = new Map();
+  const resMap = new Map();
+  const nativesMap = new Map();
+  let selected = null;
+  // Arc indexing for fast lookups
+  let arcNodeList = [];
+  let arcsByCity = new Map();
+  let lastHighlighted = [];
+
+  // Filter UI state
+  let filterMode = 'res';
+  let selectedCountry = '';
+  let selectedState = '';
+  const elFilterRes = document.getElementById('filterRes');
+  const elFilterBirth = document.getElementById('filterBirth');
+  const selCountry = document.getElementById('selCountry');
+  const selState = document.getElementById('selState');
+  const stateRow = document.getElementById('stateRow');
+
+  // Datasets for different view modes
+  let birthDataAll = [];
+  let resDataAll = [];
+  let birthOnlyData = [];
+
+  // Legend checkbox state
+  let showBirth = true, showRes = true, showArcs = true;
+  const chkBirth = document.getElementById('chkBirth');
+  const chkRes = document.getElementById('chkRes');
+  const chkArcs = document.getElementById('chkArcs');
+
+  // ============================================================================
+  // RENDERING FUNCTIONS
+  // ============================================================================
+
+  function redraw() {
+    const { width, height } = svg.node().getBoundingClientRect();
+    projection = d3.geoNaturalEarth1().fitSize([width, height], {type:"Sphere"});
+    path = d3.geoPath().projection(projection);
+
+    if (zoom) {
+      zoom.translateExtent([[-width, -height], [2*width, 2*height]]);
+      svg.call(zoom);
+    }
+
+    sphere.attr("d", path({type:"Sphere"}));
+    grat.attr("d", path(d3.geoGraticule10()));
+    // Reproject visible land layer(s)
+    landG110.selectAll("path.land").attr("d", path);
+    if (land50) landG50.selectAll("path.land").attr("d", path);
+    statesG.selectAll("path.land").attr("d", path);
+
+    arcsG.selectAll("path")
+      .attr("d", d => path({ type:"LineString", coordinates:[d.fromLL, d.toLL] }));
+
+    hitsG.selectAll("path")
+      .attr("d", d => path({ type:"LineString", coordinates:[d.fromLL, d.toLL] }));
+
+    birthG.selectAll("circle")
+      .attr("cx", d => projection(d.ll)[0])
+      .attr("cy", d => projection(d.ll)[1]);
+    
+    resG.selectAll("circle")
+      .attr("cx", d => projection(d.ll)[0])
+      .attr("cy", d => projection(d.ll)[1]);
+
+    sizeDotsForK();
+
+    // Toggle land detail by zoom (keep 110m visible until 50m is ready)
+    const k = getK();
+    if (k >= DETAIL_THRESHOLD) {
+      ensureLand50();
+      if (land50) {
+        landG110.attr("display", "none");
+        landG50.attr("display", null);
+      } else {
+        landG110.attr("display", null);
+        landG50.attr("display", "none");
+      }
+    } else {
+      landG110.attr("display", null);
+      landG50.attr("display", "none");
+    }
+
+    // Update tooltip position if a city is selected
+    if (selected && selected.city){
+      const t = d3.zoomTransform(svg.node());
+      const [x,y] = t.apply(projection(selected.city.ll));
+      showTipAt(cityTipHTML(selected.name, selected.type), x, y);
+    }
+  }
+
+  // Debounced resize handler for performance
+  window.addEventListener("resize", debounce(redraw, CONFIG.RESIZE_DEBOUNCE_MS));
+
+  function clearIsolationOnFilter(){
+    if (selected) resetToDefault();
+  }
+
+  function populateCountries(mode){
+    // Collect unique countries present from aggregated flows
+    const set = new Set();
+    if (Array.isArray(flowsBR) && flowsBR.length){
+      for (const f of flowsBR){
+        if (mode === 'res') {
+          if (f.toCountry && f.toCountry !== 'NA') set.add(f.toCountry);
+        } else {
+          if (f.fromCountry && f.fromCountry !== 'NA') set.add(f.fromCountry);
+        }
+      }
+    } else {
+      // Fallback to raw people if flows not built yet
+      for (const p of people){
+        if (mode === 'res') { if (p.resCountry && p.resCountry !== 'NA') set.add(p.resCountry); }
+        else { if (p.birthCountry && p.birthCountry !== 'NA') set.add(p.birthCountry); }
+      }
+    }
+    const all = [...set].sort((a,b)=> a.localeCompare(b));
+    const popularCountries = ['United States','China','Germany'];
+    const popular = popularCountries.filter(c => all.includes(c));
+    const rest = all.filter(c => !popular.includes(c));
+    const html = [
+      '<option value="">All</option>',
+      popular.length ? '<option value="" disabled>------</option>' : '',
+      ...popular.map(c => `<option value="${c}">${c}</option>`),
+      popular.length && rest.length ? '<option value="" disabled>------</option>' : '',
+      ...rest.map(c => `<option value="${c}">${c}</option>`)
+    ].join('');
+    selCountry.innerHTML = html;
+    // Preserve if still present
+    if (selectedCountry && !set.has(selectedCountry)) selectedCountry = '';
+    selCountry.value = selectedCountry;
+    // Update state list if US selected
+    updateStates();
+  }
+
+  function updateStates(){
+    const isUS = (selectedCountry === 'United States');
+    if (!isUS){
+      selState.disabled = true;
+      selectedState = '';
+      selState.innerHTML = '<option value="">All States</option>';
+      selState.value = '';
+      return;
+    }
+    // Enable and populate for US
+    selState.disabled = false;
+    const set = new Set();
+    for (const p of people){
+      if (filterMode === 'res'){
+        if (p.resCountry === selectedCountry && p.resState && p.resState !== 'NA') set.add(p.resState);
+      } else {
+        if (p.birthCountry === selectedCountry && p.birthState && p.birthState !== 'NA') set.add(p.birthState);
+      }
+    }
+    const list = [...set].sort((a,b)=> a.localeCompare(b));
+    selState.innerHTML = '<option value="">All States</option>' + list.map(s=>`<option value="${s}">${s}</option>`).join('');
+    if (selectedState && !set.has(selectedState)) selectedState = '';
+    selState.value = selectedState;
+  }
+
+  function applyFilter(){
+    const hasCountry = !!selectedCountry;
+    const hasState = !!selectedState;
+    if (!hasCountry){
+      // No filter -> default rendering based on toggles
+      resetToDefault();
+      return;
+    }
+
+    // Determine which flows match
+    const matchFlow = (f) => {
+      if (filterMode === 'res'){
+        if (f.toCountry !== selectedCountry) return false;
+        if (hasState){ return (f.toState === selectedState); }
+        return true;
+      } else {
+        if (f.fromCountry !== selectedCountry) return false;
+        if (hasState){ return (f.fromState === selectedState); }
+        return true;
+      }
+    };
+
+    const filtered = flowsBR.filter(matchFlow);
+
+    // Update arc visibility
+    const setFiltered = new Set(filtered);
+    arcSel.classed('hidden', d => !setFiltered.has(d));
+    hitsG.selectAll('path').classed('hidden', d => !setFiltered.has(d));
+
+    // Build origin/destination sets for dots from the filtered flows
+    const originNames = new Set(filtered.map(f => f.from));
+    const destNames   = new Set(filtered.map(f => f.to));
+
+    // Render red birth dots = origins of filtered flows (if enabled)
+    if (showBirth){
+      // Enforce "blue wins": if residence layer is visible, do not render red dots
+      // for cities that are also in destinations.
+      const redNames = showRes ? [...originNames].filter(n => !destNames.has(n))
+                               : [...originNames];
+      const origins = redNames.map(n => {
+        const cityData = birthMap.get(n) || resMap.get(n);
+        return { name:n, ll: cityData.ll, count: (birthMap.get(n)?.count || 0) };
+      });
+      renderBirthDots(origins);
+    }
+
+    // Render blue res dots = destinations of filtered flows (if enabled)
+    if (showRes){
+      const dests = [...destNames].map(n => {
+        const cityData = resMap.get(n) || birthMap.get(n);
+        return { name:n, ll: cityData.ll, count: (resMap.get(n)?.count || 0) };
+      });
+      renderResDots(dests);
+    }
+
+    // Sync sizes and respect current layer visibility without re-entering updateVisibility
+    sizeDotsForK();
+    birthG.classed('hidden', !showBirth);
+    resG  .classed('hidden', !showRes);
+    arcsG .classed('hidden', !showArcs);
+    hitsG .classed('hidden', !showArcs);
+  }
+
+  function updateVisibility(){
+    showBirth = chkBirth.checked;
+    showRes = chkRes.checked;
+    showArcs = chkArcs.checked;
+
+    // If a filter is active, reapply filtered rendering; otherwise use default rules
+    const filterActive = !!selectedCountry;
+    if (!selected && filterActive) {
+      applyFilter();
+    } else if (!selected && !filterActive) {
+      if (showBirth) renderBirthDots(showRes ? birthOnlyData : birthDataAll);
+      else renderBirthDots([]);
+    }
+
+    birthG.classed('hidden', !showBirth);
+    resG  .classed('hidden', !showRes);
+    arcsG .classed('hidden', !showArcs);
+    hitsG .classed('hidden', !showArcs);
+
+    // Special case: in residence isolation, if Residence is hidden but Birth is shown,
+    // also render the birth dot for the selected residence city.
+    if (selected && selected.type === 'res' && showBirth) {
+      const destName = selected.name;
+      const incoming = flowsBR.filter(f => f.to === destName && f.from !== destName);
+      const originNames = new Set(incoming.map(f => f.from));
+      const origins = [...originNames].map(n => {
+        const cityData = birthMap.get(n) || resMap.get(n);
+        return { name:n, ll: cityData.ll, count: (birthMap.get(n)?.count || 0) };
+      });
+      if (!showRes) {
+        const b = birthMap.get(destName) || resMap.get(destName);
+        if (b) origins.push({ name: destName, ll: b.ll, count: (birthMap.get(destName)?.count || 0) });
+      }
+      renderBirthDots(origins);
+      sizeDotsForK();
+    }
+
+    // Symmetric case: in birth isolation, if Birth is hidden but Residence is shown,
+    // also render the residence dot for the selected birth city.
+    if (selected && selected.type === 'birth' && showRes) {
+      const birthName = selected.name;
+      const outgoing = flowsBR.filter(f => f.from === birthName && f.to !== birthName);
+      const destNames = new Set(outgoing.map(f => f.to));
+      const dests = [...destNames].map(n => {
+        const cityData = resMap.get(n) || birthMap.get(n);
+        return { name:n, ll: cityData.ll, count: (resMap.get(n)?.count || 0) };
+      });
+      if (!showBirth) {
+        const r = resMap.get(birthName) || birthMap.get(birthName);
+        if (r) dests.push({ name: birthName, ll: r.ll, count: (resMap.get(birthName)?.count || 0) });
+      }
+      renderResDots(dests);
+      sizeDotsForK();
+    }
+
+    // Hide tooltip if the selected layer is now hidden
+    if ((selected?.type === 'birth' && !showBirth) ||
+        (selected?.type === 'res'   && !showRes)) {
+      hideTip();
+    }
+
+    // Sync legend reset state based on toggle defaults
+    if (typeof updateResetTogglesState === 'function') updateResetTogglesState();
+  }
+
+  function countsFor(name) {
+    return {
+      birth: (birthMap.get(name)?.count || 0),
+      res: (resMap.get(name)?.count || 0)
+    };
+  }
+
+  function cityTipHTML(name, type){
+    const safeName = escapeHtml(name);
+    const c = countsFor(name);
+    const natives = nativesMap.get(name) || 0;
+    
+    if (type === 'res') {
+      const pct = c.res ? Math.round((natives / c.res) * 100) : 0;
+      // Single-line forms for singular
+      if (c.res === 1) {
+        const line = (natives === 1)
+          ? '1 billionaire, born there'
+          : '1 billionaire, born elsewhere';
+        return `<strong>${safeName}</strong><br>${line}`;
+      }
+      // Plural forms
+      const line1 = `${nf.format(c.res)} billionaires`;
+      const line2 = (natives === 0)
+        ? 'None of whom were born there'
+        : `${nf.format(natives)} (${pct}%) of whom were born there`;
+      return `<strong>${safeName}</strong><br>${line1}<br>${line2}`;
+    }
+    const birthLine = (c.birth === 1)
+      ? '1 billionaire born there'
+      : `${nf.format(c.birth)} billionaires born there`;
+    return `<strong>${safeName}</strong><br>${birthLine}`;
+  }
+
+  // Unified dot rendering function to eliminate duplication
+  function renderDots(container, data, className, type){
+    const sel = container.selectAll("circle").data(data, d => d.name);
+    
+    sel.enter()
+      .append("circle")
+      .attr("class", className)
+      .attr("opacity", .75)
+      .merge(sel)
+        .classed("hidden", false)
+        .attr("cx", d => projection(d.ll)[0])
+        .attr("cy", d => projection(d.ll)[1])
+        .attr("r", d => cityRadius(d, getK()))
+        .on("mousemove", (evt, d) => {
+          if (!selected) {
+            // highlight only the connected arcs via index
+            const nodes = arcsByCity.get(d.name) || [];
+            lastHighlighted = nodes;
+            for (const n of nodes) n.classList.add('highlight');
+          }
+          showTip(cityTipHTML(d.name, type), evt);
+        })
+        .on("mouseout", () => {
+          if (!selected && lastHighlighted.length) {
+            for (const n of lastHighlighted) n.classList.remove('highlight');
+            lastHighlighted = [];
+          }
+          hideTip();
+        })
+        .on("click", (evt, d) => {
+          evt.stopPropagation();
+          // If a country/state filter is active and the clicked city is outside it,
+          // clear the filter but keep proceeding into isolation.
+          if (selectedCountry) {
+            const meta = (type === 'birth' ? (birthMap.get(d.name) || resMap.get(d.name))
+                                           : (resMap.get(d.name)   || birthMap.get(d.name)));
+            const cityCountry = meta?.country || '';
+            const cityState   = meta?.state || '';
+            const isUS = (selectedCountry === 'United States' || selectedCountry === 'United States of America' || selectedCountry === 'USA' || selectedCountry === 'US');
+            const countryMismatch = cityCountry !== selectedCountry;
+            const stateMismatch   = isUS && selectedState && (cityState !== selectedState);
+            if (countryMismatch || stateMismatch){
+              selectedCountry = '';
+              selectedState = '';
+              if (selCountry) selCountry.value = '';
+              if (selState) selState.value = '';
+              updateStates();
+              if (typeof updateClearFilterState === 'function') updateClearFilterState();
+              // Do not reset view here; isolation below will re-render appropriately.
+            }
+          }
+          if (type === 'birth') {
+            enterBirthIsolation(d.name);
+          } else {
+            enterResIsolation(d.name);
+          }
+        });
+    
+    sel.exit().remove();
+  }
+
+  function renderBirthDots(data) {
+    renderDots(birthG, data, 'birth', 'birth');
+  }
+
+  function renderResDots(data) {
+    renderDots(resG, data, 'res', 'res');
+  }
+
+  // ============================================================================
+  // ISOLATION MODE (Click to focus on specific flows)
+  // ============================================================================
+
+  function enterResIsolation(destName){
+    // Filter for incoming flows only
+    const incoming = flowsBR.filter(f => f.to === destName && f.from !== destName);
+    const originNames = new Set(incoming.map(f => f.from));
+
+    // Show only relevant arcs and emphasize them
+    const isMatch = (a) => (a.to === destName && a.from !== destName);
+    arcSel
+      .classed("hidden", a => !isMatch(a))
+      .classed("focus",  a =>  isMatch(a))
+      .classed("highlight", false)
+      .attr("stroke-width", a => isMatch(a) ? widthScale(a.value) * 1.4 : widthScale(a.value));
+    hitsG.selectAll("path").classed("hidden", a => !(a.to === destName && a.from !== destName));
+
+    // Show origin dots (birth locations)
+    const origins = [...originNames].map(n => {
+      const cityData = birthMap.get(n) || resMap.get(n);
+      return {
+        name: n,
+        ll: cityData.ll,
+        count: birthMap.get(n)?.count || 0
+      };
+    });
+    renderBirthDots(origins);
+
+    // Show only the selected residence dot
+    resG.selectAll("circle").classed("hidden", d => d.name !== destName);
+
+    // Update selected state and show persistent tooltip
+    const city = resMap.get(destName);
+    selected = city ? { name: destName, type: 'res', city } : null;
+    if (city){
+      const t = d3.zoomTransform(svg.node());
+      const [x, y] = t.apply(projection(city.ll));
+      showTipAt(cityTipHTML(destName, 'res'), x, y);
+    }
+    
+    sizeDotsForK();
+    updateVisibility();
+  }
+
+  function enterBirthIsolation(birthName){
+    // Filter for outgoing flows only (exclude self-loops)
+    const outgoing = flowsBR.filter(f => f.from === birthName && f.to !== birthName);
+    const destNames = new Set(outgoing.map(f => f.to));
+
+    // Show only relevant arcs and emphasize them
+    const isMatch = (a) => (a.from === birthName && a.to !== birthName);
+    arcSel
+      .classed("hidden", a => !isMatch(a))
+      .classed("focus",  a =>  isMatch(a))
+      .classed("highlight", false)
+      .attr("stroke-width", a => isMatch(a) ? widthScale(a.value) * 1.4 : widthScale(a.value));
+    hitsG.selectAll("path").classed("hidden", a => !(a.from === birthName && a.to !== birthName));
+
+    // Show only destination residence dots
+    resG.selectAll("circle").classed("hidden", d => !destNames.has(d.name));
+
+    // Show only the selected birth dot
+    const b = birthMap.get(birthName) || resMap.get(birthName);
+    renderBirthDots(b ? [{
+      name: birthName,
+      ll: b.ll,
+      count: birthMap.get(birthName)?.count || 0
+    }] : []);
+
+    // Update selected state and show persistent tooltip
+    selected = b ? { name: birthName, type: 'birth', city: b } : null;
+    if (b){
+      const t = d3.zoomTransform(svg.node());
+      const [x, y] = t.apply(projection(b.ll));
+      showTipAt(cityTipHTML(birthName, 'birth'), x, y);
+    }
+    
+    sizeDotsForK();
+    updateVisibility();
+  }
+
+  // Unified reset function to ensure consistent state
+  function resetToDefault(){
+    // Clear selection state
+    selected = null;
+    
+    // Reset all arc visibility and highlighting
+    arcSel
+      .classed("hidden", false)
+      .classed("highlight", false)
+      .classed("focus", false)
+      .attr("stroke-width", d => widthScale(d.value));
+    hitsG.selectAll("path").classed("hidden", false);
+    
+    // Reset all dot visibility
+    birthG.selectAll("circle").classed("hidden", false);
+    resG.selectAll("circle").classed("hidden", false);
+    
+    // Remove all layer hiding
+    [birthG, resG, arcsG, hitsG].forEach(g => g.classed('hidden', false));
+    
+    // Hide tooltip
+    hideTip();
+    
+    // Re-render default datasets (critical for correct data join)
+    renderBirthDots(birthOnlyData);
+    renderResDots(resDataAll);
+    
+    // Update sizes for current zoom level
+    sizeDotsForK();
+    
+    // Update arc opacity for current zoom
+    const k = getK();
+    arcSel.attr("stroke-opacity", getArcOpacity(k));
+    
+    // Apply visibility settings from checkboxes
+    updateVisibility();
+  }
+
+  // ============================================================================
+  // EVENT HANDLERS
+  // ============================================================================
+
+  // Background click resets (using capture phase to intercept before circle handlers)
+  svg.on("click.reset", function(evt){
+    const tag = (evt.target && evt.target.tagName || '').toLowerCase();
+    if (tag === 'circle') return;
+    resetToDefault();
+  }, true);
+
+  // Checkbox change events
+  chkBirth.addEventListener('change', updateVisibility);
+  chkRes.addEventListener('change', updateVisibility);
+  chkArcs.addEventListener('change', updateVisibility);
+
+  // Filter UI wiring
+  elFilterRes.addEventListener('change', () => {
+    if (elFilterRes.checked){ filterMode = 'res'; populateCountries(filterMode); clearIsolationOnFilter(); applyFilter(); }
+  });
+  elFilterBirth.addEventListener('change', () => {
+    if (elFilterBirth.checked){ filterMode = 'birth'; populateCountries(filterMode); clearIsolationOnFilter(); applyFilter(); }
+  });
+  selCountry.addEventListener('change', () => {
+    selectedCountry = selCountry.value;
+    updateStates();
+    clearIsolationOnFilter();
+    applyFilter();
+    updateClearFilterState();
+  });
+  selState.addEventListener('change', () => {
+    selectedState = selState.value;
+    clearIsolationOnFilter();
+    applyFilter();
+    updateClearFilterState();
+  });
+
+  // Clear filter button
+  const btnClearFilter = document.getElementById('btnClearFilter');
+  btnClearFilter.addEventListener('click', (e) => {
+    e.preventDefault();
+    selectedCountry = '';
+    selectedState = '';
+    selCountry.value = '';
+    updateStates();
+    // Exit isolation if any and return to default rendering per toggles
+    resetToDefault();
+    updateClearFilterState();
+  });
+
+  // Reset legend toggles (Birth/Residence/Arcs) to defaults without altering filters
+  const btnResetToggles = document.getElementById('btnResetToggles');
+  btnResetToggles.addEventListener('click', (e) => {
+    e.preventDefault();
+    chkBirth.checked = true;
+    chkRes.checked   = true;
+    chkArcs.checked  = true;
+    updateVisibility();
+  });
+
+  // Reset All button
+  const btnReset = document.getElementById('btnResetAll');
+  btnReset.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    // Reset checkboxes to default (all checked)
+    chkBirth.checked = true;
+    chkRes.checked = true;
+    chkArcs.checked = true;
+
+    // Clear filters
+    selectedCountry = '';
+    selectedState = '';
+    elFilterRes.checked = true; elFilterBirth.checked = false; filterMode = 'res';
+    populateCountries(filterMode);
+    // Use unified reset function
+    resetToDefault();
+    updateClearFilterState();
+  });
+
+    // Enable/disable filter clear button based on filter state
+  function updateClearFilterState(){
+    if (btnClearFilter) btnClearFilter.disabled = !selectedCountry;
+  }
+
+  // Enable/disable legend clear (✕) based on toggle state (all defaults -> disabled)
+  function updateResetTogglesState(){
+    if (btnResetToggles) btnResetToggles.disabled = (chkBirth.checked && chkRes.checked && chkArcs.checked);
+  }
+
+
+  // ============================================================================
+  // DATA PROCESSING AND INITIAL RENDER
+  // ============================================================================
+
+  if (people.length === 0) return;
+
+  // Aggregate flows
+  flowsBR = aggregateBR(people);
+
+  // Build city maps
+  for (const f of flowsBR){
+    // Birth location aggregation
+    if (!birthMap.has(f.from)) {
+      birthMap.set(f.from, { ll: f.fromLL, count: 0, country: f.fromCountry, state: f.fromState });
+    }
+    birthMap.get(f.from).count += f.value;
+
+    // Residence location aggregation
+    if (!resMap.has(f.to)) {
+      resMap.set(f.to, { ll: f.toLL, count: 0, country: f.toCountry, state: f.toState });
+    }
+    resMap.get(f.to).count += f.value;
+
+    // Track natives (people who stayed in their birth location)
+    if (f.from === f.to) {
+      nativesMap.set(f.from, (nativesMap.get(f.from) || 0) + f.value);
+    }
+  }
+
+  // Create datasets for different views
+  birthDataAll = [...birthMap].map(([name, v]) => ({ name, ll: v.ll, count: v.count }));
+  resDataAll = [...resMap].map(([name, v]) => ({ name, ll: v.ll, count: v.count }));
+  birthOnlyData = birthDataAll.filter(d => !resMap.has(d.name));
+
+  // Calculate scales
+  const maxFlow = d3.max(flowsBR, d => d.value) || 1;
+  widthScale = d3.scaleSqrt()
+    .domain([1, maxFlow])
+    .range([CONFIG.FLOW_WIDTH.MIN, CONFIG.FLOW_WIDTH.MAX]);
+
+  const maxCount = Math.max(
+    d3.max(birthDataAll, d => d.count) || 1,
+    d3.max(resDataAll, d => d.count) || 1
+  );
+  rScale = d3.scaleSqrt()
+    .domain([1, maxCount])
+    .range([CONFIG.DOT_RADIUS.MIN, CONFIG.DOT_RADIUS.MAX])
+    .clamp(true);
+
+  // Render arcs
+  arcSel = arcsG.selectAll("path")
+    .data(flowsBR)
+    .join("path")
+    .attr("class", "arc")
+    .attr("data-i", (d,i)=>{ d._i = i; return i; })
+    .attr("stroke-width", d => widthScale(d.value))
+    .attr("d", d => path({ type: "LineString", coordinates: [d.fromLL, d.toLL] }));
+
+  // Build fast lookup indices
+  arcNodeList = arcSel.nodes();
+  arcsByCity = new Map();
+  flowsBR.forEach((f, i) => {
+    const n = arcNodeList[i];
+    if (!arcsByCity.has(f.from)) arcsByCity.set(f.from, []);
+    if (!arcsByCity.has(f.to))   arcsByCity.set(f.to, []);
+    arcsByCity.get(f.from).push(n);
+    arcsByCity.get(f.to).push(n);
+  });
+
+  // Arc hit targets for hover interaction
+  hitsG.selectAll("path")
+    .data(flowsBR)
+    .join("path")
+    .attr("class", "arc-hit")
+    .attr("data-i", (d,i)=> i)
+    .attr("d", d => path({ type: "LineString", coordinates: [d.fromLL, d.toLL] }))
+    .on("mousemove", (evt, d) => {
+      const n = arcNodeList[d._i];
+      if (n) n.classList.add('flow');
+      const safeName = `${escapeHtml(d.from)} → ${escapeHtml(d.to)}`;
+      showTip(`<strong>${safeName}</strong><br>${plural(d.value, 'individual')}`, evt);
+    })
+    .on("mouseout", (evt, d) => {
+      const n = arcNodeList[d._i];
+      if (n) n.classList.remove('flow');
+      hideTip();
+    });
+
+  // Initial dot rendering
+  renderBirthDots(birthOnlyData);
+  renderResDots(resDataAll);
+
+  // Setup zoom behavior
+  const { width, height } = svg.node().getBoundingClientRect();
+  let zoom = d3.zoom()
+    .scaleExtent([CONFIG.ZOOM.MIN, CONFIG.ZOOM.MAX])
+    .translateExtent([[-width, -height], [2 * width, 2 * height]])
+    .on("zoom", ev => {
+      rootG.attr("transform", ev.transform);
+      const k = ev.transform.k;
+      
+      // Update dot sizes based on zoom
+      birthG.selectAll("circle").attr("r", d => cityRadius(d, k));
+      resG.selectAll("circle").attr("r", d => cityRadius(d, k));
+      
+      // Update arc opacity based on zoom
+      arcSel.attr("stroke-opacity", getArcOpacity(k));
+
+      // Land detail swap per zoom
+      if (k >= DETAIL_THRESHOLD) {
+        ensureLand50();
+        if (land50) {
+          landG110.attr("display", "none");
+          landG50.attr("display", null);
+        } else {
+          landG110.attr("display", null);
+          landG50.attr("display", "none");
+        }
+      } else {
+        landG110.attr("display", null);
+        landG50.attr("display", "none");
+      }
+
+      // Hide tooltip on any zoom/pan movement to avoid it drifting
+      hideTip();
+    });
+  
+  svg.call(zoom);
+  
+  // Hide tooltip on page scroll or resize (mobile scrolling, orientation changes)
+  window.addEventListener('scroll', () => { hideTip(); }, { passive: true });
+  window.addEventListener('resize', () => { hideTip(); }, { passive: true });
+  
+  // Zoom control buttons
+  const btnZoomIn  = document.getElementById('btnZoomIn');
+  const btnZoomOut = document.getElementById('btnZoomOut');
+  const btnZoomReset = document.getElementById('btnZoomReset');
+  const ZF = 1.2; // zoom factor per click
+  btnZoomIn.addEventListener('click', () => {
+    svg.transition().duration(220).call(zoom.scaleBy, ZF);
+  });
+  btnZoomOut.addEventListener('click', () => {
+    svg.transition().duration(220).call(zoom.scaleBy, 1 / ZF);
+  });
+  btnZoomReset.addEventListener('click', () => {
+    svg.transition().duration(250).call(zoom.transform, d3.zoomIdentity);
+  });
+
+  // Initial render
+  redraw();
+  updateVisibility();
+
+  // Initialize filter options after data load
+  populateCountries(filterMode);
+  updateClearFilterState();
+  updateResetTogglesState();
+  
+  // Panel collapse toggle (persisted)
+  const btnPanelToggle = document.getElementById('btnPanelToggle');
+  const PANEL_KEY = 'panelCollapsed';
+  function setPanelCollapsed(collapsed){
+    const el = document.getElementById('panel');
+    if (!el) return;
+    if (collapsed) {
+      el.classList.add('collapsed');
+      if (btnPanelToggle){ btnPanelToggle.textContent = '▸'; btnPanelToggle.setAttribute('aria-expanded','false'); btnPanelToggle.title='Expand panel'; }
+    } else {
+      el.classList.remove('collapsed');
+      if (btnPanelToggle){ btnPanelToggle.textContent = '▾'; btnPanelToggle.setAttribute('aria-expanded','true'); btnPanelToggle.title='Collapse panel'; }
+    }
+    try { localStorage.setItem(PANEL_KEY, collapsed ? '1' : '0'); } catch {}
+  }
+  if (btnPanelToggle){
+    btnPanelToggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      const el = document.getElementById('panel');
+      const next = !el.classList.contains('collapsed');
+      setPanelCollapsed(next);
+    });
+  }
+  // Restore preference, default collapsed on narrow screens
+  let initialCollapsed = false;
+  try { initialCollapsed = localStorage.getItem(PANEL_KEY) === '1'; } catch {}
+  if (window.innerWidth < 640 && localStorage.getItem(PANEL_KEY) == null) initialCollapsed = true;
+  setPanelCollapsed(initialCollapsed);
+})();
+</script>
+</body>
+</html>
