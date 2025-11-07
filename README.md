@@ -1,4 +1,4 @@
-# Billionaire-Migration-Map
+# Billionaire Migration Map
 
 A replication package for the data visualization preprint, "Mapping the Migration Flows of the Global Economic Elite".  A live version of the interactive visualization can be found at: https://wesleystubenbord.com/migration-map.
 
