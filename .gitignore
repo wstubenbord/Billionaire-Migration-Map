@@ -49,3 +49,4 @@ rsconnect/
 import_data.R
 resize_to_png.R
 table_s3.xlsx
+docs/

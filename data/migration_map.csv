@@ -1,7 +1,7 @@
 ﻿"person_id","birth","birth.lat","birth.long","birth.country","birth.state","res","res.lat","res.long","res.country","res.state"
 1,"Turku, Finland",60.4515944,22.2669983,"Finland",NA,"Helsinki, Finland",60.1698897,24.9384719,"Finland",NA
 2,"São Paulo, São Paulo, Brazil",-23.5506507,-46.6333824,"Brazil",NA,"Rio de Janeiro, Rio de Janeiro, Brazil",-22.9110137,-43.2093727,"Brazil",NA
-3,"Nattika, Thrissur district, India",10.4166256,76.1525844,"India",NA,"Abu Dhabi, United Arab Emirates",24.4538352,54.3774014,"United Arab Emirates",NA
+3,"Thrissur, Kerala, India",10.5270099,76.214621,"India",NA,"Abu Dhabi, United Arab Emirates",24.4538352,54.3774014,"United Arab Emirates",NA
 4,"Hatay, Turkey",36.3451332,36.0748022,"Turkey",NA,"Clifton, New Jersey, United States",40.8584328,-74.1637553,"United States","New Jersey"
 5,"New London, Connecticut, United States",41.3556187,-72.0997804,"United States","Connecticut","Shelburne, Vermont, United States",44.3783486,-73.2276183,"United States","Vermont"
 6,"Madrid, Spain",40.416782,-3.703507,"Spain",NA,"Madrid, Spain",40.416782,-3.703507,"Spain",NA
@@ -114,7 +114,7 @@
 206,"São Paulo, São Paulo, Brazil",-23.5506507,-46.6333824,"Brazil",NA,"São Paulo, São Paulo, Brazil",-23.5506507,-46.6333824,"Brazil",NA
 207,"Ankara, Turkey",39.9207759,32.8540497,"Turkey",NA,"Istanbul, Turkey",41.006381,28.9758715,"Turkey",NA
 208,"Cremona, Cremona, Italy",45.1334796,10.0248716,"Italy",NA,"Cremona, Italy",45.2208641,10.037038,"Italy",NA
-212,"Chichester, West Sussex, United Kingdom",50.8364862,-0.7791721,"United Kingdom",NA,"Turks and Caicos Islands, Turks & Caicos Islands",21.721746,-71.5527809,"Turks & Caicos Islands",NA
+212,"Chichester, West Sussex, United Kingdom",50.8364862,-0.7791721,"United Kingdom",NA,"Turks and Caicos Islands",21.716667,-71.55,"Turks & Caicos Islands",NA
 214,"Walsall, Staffordshire, United Kingdom",52.6326929,-2.0167166,"United Kingdom",NA,"Hertfordshire, United Kingdom",51.8400523,-0.0978552,"United Kingdom",NA
 215,"New York, New York, United States",40.7127281,-74.0060152,"United States","New York","Greenwich, Connecticut, United States",41.0264862,-73.6284598,"United States","Connecticut"
 217,"Boulder, Colorado, United States",40.0149856,-105.270545,"United States","Colorado","New York, New York, United States",40.7127281,-74.0060152,"United States","New York"
@@ -169,7 +169,7 @@
 286,"Sagunto, Spain",39.6792916,-0.2786451,"Spain",NA,"London, United Kingdom",51.4893335,-0.1440551,"United Kingdom",NA
 287,"Longnan County, Jiangxi, China",33.9981882,105.2018925,"China",NA,"Nanchang, Jiangxi, China",28.6472124,116.0348483,"China",NA
 288,"Belém, Pará, Brazil",-1.45056,-48.4682453,"Brazil",NA,"Rio de Janeiro, Rio de Janeiro, Brazil",-22.9110137,-43.2093727,"Brazil",NA
-289,"London, United Kingdom",51.4893335,-0.1440551,"United Kingdom",NA,"Island of Brecquou, United Kingdom",49.43222,-2.38833,"United Kingdom",NA
+289,"London, United Kingdom",51.4893335,-0.1440551,"United Kingdom",NA,"Brecqhou, Guernsey, Channel Islands",49.43222,-2.38833,"Channel Islands",NA
 291,"Milan, Italy",45.4641943,9.1896346,"Italy",NA,"Parma, Italy",44.6952006,10.0979869,"Italy",NA
 292,"Milan, Italy",45.4641943,9.1896346,"Italy",NA,"Parma, Italy",44.6952006,10.0979869,"Italy",NA
 293,"Milan, Italy",45.4641943,9.1896346,"Italy",NA,"Parma, Italy",44.6952006,10.0979869,"Italy",NA
@@ -193,7 +193,7 @@
 316,"Prague, Czechia",50.0596288,14.4464593,"Czechia",NA,"Prague, Czechia",50.0596288,14.4464593,"Czechia",NA
 317,"Hamburg, Germany",53.550341,10.000654,"Germany",NA,"Hamburg, Germany",53.550341,10.000654,"Germany",NA
 319,"Meilen, Zurich, Switzerland",47.270428,8.6412249,"Switzerland",NA,"Rheinfelden, Switzerland",47.5543859,7.7922905,"Switzerland",NA
-320,"Heidelberg, Germany",49.4093582,8.694724,"Germany",NA,"Monaco, Monaco",43.7323492,7.4276832,"Monaco",NA
+320,"Heidelberg, Germany",49.4093582,8.694724,"Germany",NA,"Monaco",43.7323492,7.4276832,"Monaco",NA
 323,"Istanbul, Turkey",41.006381,28.9758715,"Turkey",NA,"Istanbul, Turkey",41.006381,28.9758715,"Turkey",NA
 324,"Istanbul, Turkey",41.006381,28.9758715,"Turkey",NA,"Istanbul, Turkey",41.006381,28.9758715,"Turkey",NA
 325,"Lansing, Michigan, United States",42.7338254,-84.5546295,"United States","Michigan","Dallas, Texas, United States",32.7762719,-96.7968559,"United States","Texas"
@@ -211,7 +211,7 @@
 344,"Xiamen, Fujian, China",24.5438732,118.0768065,"China",NA,"Manila, Philippines",14.5904492,120.9803621,"Philippines",NA
 345,"Tunis, Tunisia",33.8439408,9.400138,"Tunisia",NA,"Paris, France",48.8588897,2.320041,"France",NA
 348,"Villanueva, Colombia",6.6712394,-73.1753984,"Colombia",NA,"Santiago, Chile",-33.4377756,-70.6504502,"Chile",NA
-352,"Treviso, Treviso, Italy",45.6658505,12.2455414,"Italy",NA,"Treviso, Italy",45.8066913,12.2063158,"Italy",NA
+352,"Treviso, Treviso, Italy",45.6658505,12.2455414,"Italy",NA,"Treviso, Treviso, Italy",45.6658505,12.2455414,"Italy",NA
 353,"Treviso, Treviso, Italy",45.6658505,12.2455414,"Italy",NA,"Ponzano Veneto, Italy",45.723851,12.194218,"Italy",NA
 355,"San Francisco, California, United States",37.7792588,-122.4193286,"United States","California","San Francisco, California, United States",37.7792588,-122.4193286,"United States","California"
 356,"Fez, Morocco",34.0346534,-5.0161926,"Morocco",NA,"Casablanca, Morocco",33.5945144,-7.6200284,"Morocco",NA
@@ -374,7 +374,7 @@
 609,"Baltimore, Maryland, United States",39.2908816,-76.610759,"United States","Maryland","Monkton, Maryland, United States",39.5787164,-76.6155252,"United States","Maryland"
 610,"Los Angeles, California, United States",34.0536909,-118.242766,"United States","California","Beverly Hills, California, United States",34.0696501,-118.3963062,"United States","California"
 611,"Honolulu, Hawaii, United States",21.304547,-157.855676,"United States","Hawaii","McLean, Virginia, United States",38.9366853,-77.185843,"United States","Virginia"
-612,"New York, New York, United States",40.7127281,-74.0060152,"United States","New York","Monaco, Monaco",43.7323492,7.4276832,"Monaco",NA
+612,"New York, New York, United States",40.7127281,-74.0060152,"United States","New York","Monaco",43.7323492,7.4276832,"Monaco",NA
 613,"Berson, Gironde, France",45.1076383,-0.5860166,"France",NA,"Geneva, Switzerland",46.2017559,6.1466014,"Switzerland",NA
 615,"Jonesboro, Georgia, United States",33.5215013,-84.3538128,"United States","Georgia","Atlanta, Georgia, United States",33.7544657,-84.3898151,"United States","Georgia"
 616,"Jonesboro, Georgia, United States",33.5215013,-84.3538128,"United States","Georgia","Atlanta, Georgia, United States",33.7544657,-84.3898151,"United States","Georgia"
@@ -386,25 +386,25 @@
 625,"Barcelona, Spain",41.3825802,2.177073,"Spain",NA,"Les Escaldes, Andorra",42.5090019,1.5404067,"Andorra",NA
 628,"Milwaukee, Wisconsin, United States",43.0386475,-87.9090751,"United States","Wisconsin","Seattle, Washington, United States",47.6038321,-122.330062,"United States","Washington"
 631,"Damascus, Syria",33.5130695,36.3095814,"Syria",NA,"Dubai, United Arab Emirates",25.0742823,55.1885387,"United Arab Emirates",NA
-633,"Dorchester, Massachusetts, United States",42.2973205,-71.0744952,"United States","Massachusetts","Boston, Massachusetts, United States",42.3554334,-71.060511,"United States","Massachusetts"
+633,"Boston, Massachusetts, United States",42.3554334,-71.060511,"United States","Massachusetts","Boston, Massachusetts, United States",42.3554334,-71.060511,"United States","Massachusetts"
 634,"Atlanta, Georgia, United States",33.7544657,-84.3898151,"United States","Georgia","Palisades, New York, United States",41.0182822,-73.9163697,"United States","New York"
-636,"Macau, Macau SAR China",22.15781845,113.5603524,"Macau SAR China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
+636,"Macau, China",22.15781845,113.5603524,"Macau SAR China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
 638,"Zhongshan, Guangdong, China",22.5197073,113.3872302,"China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
 639,"Matangi, New Zealand",-37.8051846,175.3913028,"New Zealand",NA,"Dubai, United Arab Emirates",25.0742823,55.1885387,"United Arab Emirates",NA
 640,"Matangi, New Zealand",-37.8051846,175.3913028,"New Zealand",NA,"Singapore, Singapore",1.357107,103.8194992,"Singapore",NA
 641,"Farrukhabad, Uttar Pradesh, India",27.4362002,79.4894778,"India",NA,"New Delhi, India",28.6419258,77.2217499,"India",NA
 642,"Adampur, Haryana, India",29.2538851,75.501743,"India",NA,"Mumbai, Maharashtra, India",19.054999,72.8692035,"India",NA
 643,"Tiruthangal, Tamil Nadu, India",9.4840635,77.816633,"India",NA,"Chennai, Tamil Nadu, India",13.0836939,80.270186,"India",NA
-644,"Wenzhou, Zhejiang, China",27.9963899,120.695345,"China",NA,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA
+644,"Wenzhou, Zhejiang, China",27.9963899,120.695345,"China",NA,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA
 651,"Daegu, South Korea",35.8713,128.6018,"South Korea",NA,"Seoul, South Korea",37.5666791,126.9782914,"South Korea",NA
-655,"Zhangshu County, Yichun City, Jiangxi, China",28.08333,115.51667,"China",NA,"Zhangshu, China",28.0265539,115.4385985,"China",NA
+655,"Zhangshu, Jiangxi, China",28.0265539,115.4385985,"China",NA,"Zhangshu, Jiangxi, China",28.0265539,115.4385985,"China",NA
 656,"Ningbo, Zhejiang, China",29.8622194,121.6203873,"China",NA,"Hsinchu, Taiwan",24.8066333,120.9686833,"Taiwan",NA
 657,"Dangjin, Chungcheongnam-do, South Korea",36.8904083,126.6461833,"South Korea",NA,"Seoul, South Korea",37.5666791,126.9782914,"South Korea",NA
 658,"Quemoy, Fujian, China",28.92651,106.12972,"China",NA,"Singapore, Singapore",1.357107,103.8194992,"Singapore",NA
-660,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA,"Houston, Texas, United States",29.7589382,-95.3676974,"United States","Texas"
-661,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA,"Houston, Texas, United States",29.7589382,-95.3676974,"United States","Texas"
-662,"Houlong, Miaoli County, Taiwan",24.6135667,120.7919167,"Taiwan",NA,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA
-663,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA,"Lakeland, Florida, United States",28.0394654,-81.9498042,"United States","Florida"
+660,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA,"Houston, Texas, United States",29.7589382,-95.3676974,"United States","Texas"
+661,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA,"Houston, Texas, United States",29.7589382,-95.3676974,"United States","Texas"
+662,"Houlong, Miaoli County, Taiwan",24.6135667,120.7919167,"Taiwan",NA,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA
+663,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA,"Lakeland, Florida, United States",28.0394654,-81.9498042,"United States","Florida"
 667,"Hong Kong, China",22.2793278,114.1628131,"China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
 668,"Kathmandu, Nepal",27.708317,85.3205817,"Nepal",NA,"Kathmandu, Nepal",27.708317,85.3205817,"Nepal",NA
 669,"Panoh, Una, Himachal Pradesh, India",31.5394233,76.2010627,"India",NA,"Reno, Nevada, United States",39.5261788,-119.812658,"United States","Nevada"
@@ -426,14 +426,14 @@
 698,"Changlezhen, Jiangsu, China",31.93424,121.24754,"China",NA,"Nantong, Jiangsu, China",31.9827896,120.8904588,"China",NA
 702,"Puning, Guangdong, China",23.3000453,116.160937,"China",NA,"Guangzhou, Guangdong, China",23.1301964,113.2592945,"China",NA
 704,"Hangzhou, Zhejiang, China",30.2489634,120.2052342,"China",NA,"Hangzhou, Zhejiang, China",30.2489634,120.2052342,"China",NA
-707,"Kaohsiung, Taiwan",22.6203348,120.3120375,"Taiwan",NA,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA
+707,"Kaohsiung, Taiwan",22.6203348,120.3120375,"Taiwan",NA,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA
 708,"Nan'An, Quanzhou, Fujian, China",24.9633929,118.3842852,"China",NA,"Shenzhen, Guangdong, China",22.5445741,114.0545429,"China",NA
 710,"Wangjiang, Anhui, China",30.2369095,116.6727098,"China",NA,"Shenzhen, Guangdong, China",22.5445741,114.0545429,"China",NA
 711,"Chengdu, Sichuan, China",30.659867,104.063315,"China",NA,"Shanghai, China",31.2323437,121.4691024,"China",NA
 714,"Tongxiang, Zhejiang, China",30.6316971,120.5610365,"China",NA,"Tongxiang, Zhejiang, China",30.6316971,120.5610365,"China",NA
 715,"Chia-yi, Taiwan",23.4870952,120.4618156,"Taiwan",NA,"Los Angeles, California, United States",34.0536909,-118.242766,"United States","California"
 716,"Xinchang, Zhejiang, China",29.5031469,120.8986631,"China",NA,"Atherton, California, United States",37.453773,-122.2058272,"United States","California"
-718,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA,"Taichung, Taiwan",24.163162,120.6478282,"Taiwan",NA
+718,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA,"Taichung, Taiwan",24.163162,120.6478282,"Taiwan",NA
 719,"Hong Kong, China",22.2793278,114.1628131,"China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
 721,"Hefei, Anhui, China",31.8665676,117.281428,"China",NA,"Hefei, Anhui, China",31.8665676,117.281428,"China",NA
 722,"Xin'an, Henan, China",34.8333051,112.1167048,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
@@ -442,13 +442,13 @@
 728,"Shantou, Guangdong, China",23.3563921,116.6775856,"China",NA,"Guangzhou, Guangdong, China",23.1301964,113.2592945,"China",NA
 729,"Jinan, Shandong, China",36.6519754,117.1138479,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
 731,"Tonglu, Zhejiang, China",29.7965627,119.6876858,"China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
-733,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA
+733,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA
 734,"Chongqing, Chongqing, China",30.8101669,108.4034084,"China",NA,"Zhengzhou, Henan, China",34.7472531,113.619321,"China",NA
 735,"Taojiang, Hunan, China",28.5200908,112.148511,"China",NA,"Shenzhen, Guangdong, China",22.5445741,114.0545429,"China",NA
 737,"Zhongshan, Guangdong, China",22.5197073,113.3872302,"China",NA,"Zhongshan, Guangdong, China",22.5197073,113.3872302,"China",NA
 738,"Jieyang, Guangdong, China",23.553156,116.3680354,"China",NA,"Shenzhen, Guangdong, China",22.5445741,114.0545429,"China",NA
 739,"Shunde, Guangdong, China",22.8054891,113.2894243,"China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
-742,"Jian'ou, Fujian, China",27.0456736,118.4944139,"China",NA,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA
+742,"Jian'ou, Fujian, China",27.0456736,118.4944139,"China",NA,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA
 744,"Wujin, Jiangsu, China",31.7020406,119.9377542,"China",NA,"Changzhou, Jiangsu, China",31.8122623,119.9691539,"China",NA
 745,"Shangrao, Jiangxi, China",28.7435852,117.40539,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
 747,"Yancheng, Jiangsu, China",33.349559,120.1577019,"China",NA,"Foshan, Guangdong, China",23.0239788,113.1159558,"China",NA
@@ -475,7 +475,7 @@
 786,"Lewiston, Maine, United States",44.0990717,-70.2177099,"United States","Maine","Ventura, California, United States",34.4458248,-119.0779359,"United States","California"
 787,"Jieyang, Guangdong, China",23.553156,116.3680354,"China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
 790,"Šaľa, Slovakia",48.151379,17.8748587,"Slovakia",NA,"Bratislava, Slovakia",48.1516988,17.1093063,"Slovakia",NA
-791,"Nicosia, Cyprus",35.1746503,33.3638783,"Cyprus",NA,"Monaco, Monaco",43.7323492,7.4276832,"Monaco",NA
+791,"Nicosia, Cyprus",35.1746503,33.3638783,"Cyprus",NA,"Monaco",43.7323492,7.4276832,"Monaco",NA
 793,"Liuhuang, Fengshun County, Meizhou, Guangdong, China",23.9159398,116.4601492,"China",NA,"Guangzhou, Guangdong, China",23.1301964,113.2592945,"China",NA
 797,"Hong Kong, China",22.2793278,114.1628131,"China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
 798,"Singapore, Singapore",1.357107,103.8194992,"Singapore",NA,"Singapore, Singapore",1.357107,103.8194992,"Singapore",NA
@@ -483,7 +483,7 @@
 803,"Busan, South Korea",35.1799528,129.0752365,"South Korea",NA,"Seoul, South Korea",37.5666791,126.9782914,"South Korea",NA
 804,"Tongchon County, Kangwon Province, North Korea",38.73333,127.45,"North Korea",NA,"Seoul, South Korea",37.5666791,126.9782914,"South Korea",NA
 805,"Seoul, South Korea",37.5666791,126.9782914,"South Korea",NA,"Seoul, South Korea",37.5666791,126.9782914,"South Korea",NA
-806,"Macau, Macau SAR China",22.15781845,113.5603524,"Macau SAR China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
+806,"Macau, China",22.15781845,113.5603524,"Macau SAR China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
 807,"Hopa, Artvin, Turkey",41.3853867,41.4631932,"Turkey",NA,"Istanbul, Turkey",41.006381,28.9758715,"Turkey",NA
 808,"Caracas, Venezuela",10.5060934,-66.9146008,"Venezuela",NA,"La Romana, Dominican Republic",18.4230137,-68.9661104,"Dominican Republic",NA
 809,"Latrobe, Pennsylvania, United States",40.317287,-79.3840301,"United States","Pennsylvania","Southport, Connecticut, United States",41.1367025,-73.2835638,"United States","Connecticut"
@@ -541,7 +541,7 @@
 902,"Shanghai, China",31.2323437,121.4691024,"China",NA,"Las Vegas, Nevada, United States",36.1674263,-115.1484131,"United States","Nevada"
 903,"Yichang, Hubei, China",30.6941332,111.2803512,"China",NA,"Wuhan, Hubei, China",30.5951051,114.2999353,"China",NA
 905,"Tunchang County, Hainan, China",19.341944,110.046667,"China",NA,"Hangzhou, Zhejiang, China",30.2489634,120.2052342,"China",NA
-906,"Wuhan, Hunan, China",25.4929768,113.65195,"China",NA,"Changsha, Hunan, China",28.1450774,113.2384362,"China",NA
+906,"Wuhan, Hubei, China",30.5951051,114.2999353,"China",NA,"Changsha, Hunan, China",28.1450774,113.2384362,"China",NA
 909,"New York, New York, United States",40.7127281,-74.0060152,"United States","New York","Greenwich, Connecticut, United States",41.0264862,-73.6284598,"United States","Connecticut"
 913,"Bikaner, Rajasthan, India",28.0159286,73.3171367,"India",NA,"Mumbai, Maharashtra, India",19.054999,72.8692035,"India",NA
 914,"Hardinxveld-Giessendam, Netherlands",51.838624,4.8246104,"Netherlands",NA,"Gorinchem, Netherlands",51.8296133,4.9738743,"Netherlands",NA
@@ -586,14 +586,14 @@
 1006,"Houston, Texas, United States",29.7589382,-95.3676974,"United States","Texas","Austin, Texas, United States",30.2711286,-97.7436995,"United States","Texas"
 1007,"Sant'Elpidio a Mare, Fermo, Italy",43.2347405,13.6878517,"Italy",NA,"Casette D'ete, Italy",43.2566333,13.6846163,"Italy",NA
 1008,"Sant'Elpidio a Mare, Fermo, Italy",43.2347405,13.6878517,"Italy",NA,"Sant'Elpidio a Mare, Fermo, Italy",43.2347405,13.6878517,"Italy",NA
-1009,"Treviso, Treviso, Italy",45.6658505,12.2455414,"Italy",NA,"Treviso, Italy",45.8066913,12.2063158,"Italy",NA
+1009,"Treviso, Treviso, Italy",45.6658505,12.2455414,"Italy",NA,"Treviso, Treviso, Italy",45.6658505,12.2455414,"Italy",NA
 1012,"Moscow, Russia",55.625578,37.6063916,"Russia",NA,"Moscow, Russia",55.625578,37.6063916,"Russia",NA
-1013,"Turin, Italy",45.0677551,7.6824892,"Italy",NA,"Torino, Italy",45.0677551,7.6824892,"Italy",NA
+1013,"Turin, Italy",45.0677551,7.6824892,"Italy",NA,"Turin, Italy",45.0677551,7.6824892,"Italy",NA
 1014,"Shaodong, Hunan, China",27.1972513,111.8459833,"China",NA,"Changsha, Hunan, China",28.1450774,113.2384362,"China",NA
 1017,"Zhongshan, Guangdong, China",22.5197073,113.3872302,"China",NA,"Zhongshan, Guangdong, China",22.5197073,113.3872302,"China",NA
 1018,"Annonay, Ardèche, France",45.2399639,4.6675475,"France",NA,"Lyon, France",45.7578137,4.8320114,"France",NA
 1019,"Dzerzhinsk, Nizhny Novgorod Oblast, Russia",56.2382157,43.4617405,"Russia",NA,"Moscow, Russia",55.625578,37.6063916,"Russia",NA
-1021,"Indore, Madhya Pradesh, India",22.7203616,75.8681996,"India",NA,"Surat, India",21.2094892,72.8317058,"India",NA
+1021,"Indore, Madhya Pradesh, India",22.7203616,75.8681996,"India",NA,"Surat, Gujarat, India",21.2094892,72.8317058,"India",NA
 1022,"Boston, Massachusetts, United States",42.3554334,-71.060511,"United States","Massachusetts","Delray Beach, Florida, United States",26.4614625,-80.0728201,"United States","Florida"
 1025,"Sudbury, Ontario, Canada",46.49272,-80.991211,"Canada",NA,"Sagard, Quebec, Canada",48.0697913,-70.1036022,"Canada",NA
 1027,"Macroom, County Cork, Ireland",51.9049705,-8.9599195,"Ireland",NA,"Dublin, Ireland",53.3493795,-6.2605593,"Ireland",NA
@@ -615,7 +615,7 @@
 1051,"Quanzhou, Fujian, China",25.1901863,118.338717,"China",NA,"Quanzhou, Fujian, China",25.1901863,118.338717,"China",NA
 1052,"Ningbo, Zhejiang, China",29.8622194,121.6203873,"China",NA,"Hangzhou, Zhejiang, China",30.2489634,120.2052342,"China",NA
 1053,"Jinjiang, Fujian, China",24.784435,118.5477505,"China",NA,"Quanzhou, Fujian, China",25.1901863,118.338717,"China",NA
-1056,"Essex, United Kingdom",51.7704679,0.4646698,"United Kingdom",NA,"Monaco, Monaco",43.7323492,7.4276832,"Monaco",NA
+1056,"Essex, United Kingdom",51.7704679,0.4646698,"United Kingdom",NA,"Monaco",43.7323492,7.4276832,"Monaco",NA
 1057,"Safranbolu, Karabuk, Turkey",41.2456658,32.6929575,"Turkey",NA,"Istanbul, Turkey",41.006381,28.9758715,"Turkey",NA
 1058,"Semarang, Central Java, Indonesia",-6.9903988,110.4229104,"Indonesia",NA,"Jakarta, Indonesia",-6.1754049,106.827168,"Indonesia",NA
 1061,"St. Louis, Missouri, United States",38.6280278,-90.1910154,"United States","Missouri","Woodside, California, United States",37.4280637,-122.2507435,"United States","California"
@@ -638,12 +638,12 @@
 1089,"Baku, Azerbaijan",40.3755885,49.8328009,"Azerbaijan",NA,"Luanda, Angola",-8.8272699,13.2439512,"Angola",NA
 1090,"São Paulo, São Paulo, Brazil",-23.5506507,-46.6333824,"Brazil",NA,"São Paulo, São Paulo, Brazil",-23.5506507,-46.6333824,"Brazil",NA
 1091,"Kutna Hora, Czechia",49.9486561,15.2681123,"Czechia",NA,"Prague, Czechia",50.0596288,14.4464593,"Czechia",NA
-1092,"Linan, Zhejiang, China",30.2371364,119.7192631,"China",NA,"Hangzhou, Zhejiang, China",30.2489634,120.2052342,"China",NA
+1092,"Lin'An, Zhejiang, China",30.2371364,119.7192631,"China",NA,"Hangzhou, Zhejiang, China",30.2489634,120.2052342,"China",NA
 1093,"Lidingö, Sweden",59.3669445,18.1820897,"Sweden",NA,"Stockholm, Sweden",59.3251172,18.0710935,"Sweden",NA
 1094,"Åkersberga, Sweden",59.4823516,18.2943981,"Sweden",NA,"Stockholm, Sweden",59.3251172,18.0710935,"Sweden",NA
 1095,"Lidingö, Sweden",59.3669445,18.1820897,"Sweden",NA,"Stockholm, Sweden",59.3251172,18.0710935,"Sweden",NA
 1096,"Stockholm, Sweden",59.3251172,18.0710935,"Sweden",NA,"Stockholm, Sweden",59.3251172,18.0710935,"Sweden",NA
-1098,"Rome, Italy",41.8933203,12.4829321,"Italy",NA,"Monte Carlo, Monaco",43.7402961,7.426559,"Monaco",NA
+1098,"Rome, Italy",41.8933203,12.4829321,"Italy",NA,"Monaco",43.7323492,7.4276832,"Monaco",NA
 1099,"Casablanca, Morocco",33.5945144,-7.6200284,"Morocco",NA,"Zermatt, Switzerland",46.0212076,7.749254,"Switzerland",NA
 1100,"East Chicago, Indiana, United States",41.6397857,-87.4548466,"United States","Indiana","Atherton, California, United States",37.453773,-122.2058272,"United States","California"
 1104,"Pittsburgh, Pennsylvania, United States",40.4416941,-79.9900861,"United States","Pennsylvania","New York, New York, United States",40.7127281,-74.0060152,"United States","New York"
@@ -667,7 +667,7 @@
 1131,"Freienbach, Switzerland",47.204411,8.7598816,"Switzerland",NA,"Wilen, Switzerland",47.451714,9.0341561,"Switzerland",NA
 1132,"Tehran, Iran",35.6892523,51.3896004,"Iran",NA,"Denver, Colorado, United States",39.7392364,-104.984862,"United States","Colorado"
 1133,"St Peter South Elmham, Suffolk, United Kingdom",52.4128833,1.4323995,"United Kingdom",NA,"London, United Kingdom",51.4893335,-0.1440551,"United Kingdom",NA
-1134,"Athens, Greece",37.9755648,23.7348324,"Greece",NA,"Monaco, Monaco",43.7323492,7.4276832,"Monaco",NA
+1134,"Athens, Greece",37.9755648,23.7348324,"Greece",NA,"Monaco",43.7323492,7.4276832,"Monaco",NA
 1135,"Istanbul, Turkey",41.006381,28.9758715,"Turkey",NA,"Istanbul, Turkey",41.006381,28.9758715,"Turkey",NA
 1136,"Istanbul, Turkey",41.006381,28.9758715,"Turkey",NA,"Istanbul, Turkey",41.006381,28.9758715,"Turkey",NA
 1137,"San Francisco, California, United States",37.7792588,-122.4193286,"United States","California","New York, New York, United States",40.7127281,-74.0060152,"United States","New York"
@@ -709,7 +709,7 @@
 1189,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
 1190,"San Jose, California, United States",37.3361663,-121.890591,"United States","California","Monte Vista, California, United States",33.5385813,-117.1289814,"United States","California"
 1191,"Tongling, Anhui, China",30.9057603,117.6141351,"China",NA,"Shunde, Guangdong, China",22.8054891,113.2894243,"China",NA
-1192,"Haozhou, Anhui, China",30.90641,119.40865,"China",NA,"Hulin, China",46.0140986,133.1530496,"China",NA
+1192,"Haozhou, Anhui, China",30.90641,119.40865,"China",NA,"Hulin, Heilongjiang, China",46.0140986,133.1530496,"China",NA
 1196,"Timișoara, Romania",45.7538355,21.2257474,"Romania",NA,"New York, New York, United States",40.7127281,-74.0060152,"United States","New York"
 1197,"Pedranopolis, São Paulo, Brazil",-20.249177,-50.1102463,"Brazil",NA,"Rio de Janeiro, Rio de Janeiro, Brazil",-22.9110137,-43.2093727,"Brazil",NA
 1199,"Sydney, Australia",-33.8698439,151.2082848,"Australia",NA,"Sydney, Australia",-33.8698439,151.2082848,"Australia",NA
@@ -751,7 +751,7 @@
 1254,"San Francisco, California, United States",37.7792588,-122.4193286,"United States","California","San Francisco, California, United States",37.7792588,-122.4193286,"United States","California"
 1255,"San Francisco, California, United States",37.7792588,-122.4193286,"United States","California","Dallas, Texas, United States",32.7762719,-96.7968559,"United States","Texas"
 1256,"Allerød, Denmark",55.8707776,12.3556762,"Denmark",NA,"Los Angeles, California, United States",34.0536909,-118.242766,"United States","California"
-1257,"Savigliano, Cuneo, Italy",44.644037,7.655929,"Italy",NA,"Monaco, Monaco",43.7323492,7.4276832,"Monaco",NA
+1257,"Savigliano, Cuneo, Italy",44.644037,7.655929,"Italy",NA,"Monaco",43.7323492,7.4276832,"Monaco",NA
 1259,"Winnipeg, Manitoba, Canada",49.8955367,-97.1384584,"Canada",NA,"London, United Kingdom",51.4893335,-0.1440551,"United Kingdom",NA
 1262,"St. Moritz, Switzerland",46.4978958,9.8392428,"Switzerland",NA,"St. Moritz, Switzerland",46.4978958,9.8392428,"Switzerland",NA
 1263,"Berkeley, California, United States",37.8708393,-122.272863,"United States","California","Palm Beach, Florida, United States",26.6279798,-80.4494174,"United States","Florida"
@@ -790,7 +790,7 @@
 1312,"Nashville, Tennessee, United States",36.1622767,-86.7742984,"United States","Tennessee","Nashville, Tennessee, United States",36.1622767,-86.7742984,"United States","Tennessee"
 1314,"Tula, Tula Oblast, Russia",54.1930321,37.61754,"Russia",NA,"Moscow, Russia",55.625578,37.6063916,"Russia",NA
 1315,"Philadelphia, Pennsylvania, United States",39.9527237,-75.1635262,"United States","Pennsylvania","Miami Beach, Florida, United States",25.7929198,-80.1353006,"United States","Florida"
-1317,"Zixi County, Jiangxi, China",27.7468758,116.9895813,"China",NA,"Nanping, China",27.3856975,118.0753196,"China",NA
+1317,"Zixi County, Jiangxi, China",27.7468758,116.9895813,"China",NA,"Nanping, Fujian, China",27.3856975,118.0753196,"China",NA
 1320,"Dongyang, Zhejiang, China",29.2924528,120.2372669,"China",NA,"Hangzhou, Zhejiang, China",30.2489634,120.2052342,"China",NA
 1321,"Ningbo, Zhejiang, China",29.8622194,121.6203873,"China",NA,"Ningbo, Zhejiang, China",29.8622194,121.6203873,"China",NA
 1322,"Sabae, Fukui, Japan",35.9565096,136.1843593,"Japan",NA,"Tokyo, Japan",35.6768601,139.7638947,"Japan",NA
@@ -831,7 +831,7 @@
 1391,"Nanjing, Jiangsu, China",32.0438284,118.7788631,"China",NA,"Langfang, Hebei, China",39.5302055,116.6926134,"China",NA
 1396,"Moscow, Russia",55.625578,37.6063916,"Russia",NA,"London, United Kingdom",51.4893335,-0.1440551,"United Kingdom",NA
 1397,"Cologne, Germany",50.938361,6.959974,"Germany",NA,"Zurich, Switzerland",47.3744489,8.5410422,"Switzerland",NA
-1398,"London, United Kingdom",51.4893335,-0.1440551,"United Kingdom",NA,"Monaco, Monaco",43.7323492,7.4276832,"Monaco",NA
+1398,"London, United Kingdom",51.4893335,-0.1440551,"United Kingdom",NA,"Monaco",43.7323492,7.4276832,"Monaco",NA
 1399,"New York, New York, United States",40.7127281,-74.0060152,"United States","New York","Liberty, New York, United States",41.8012088,-74.7466262,"United States","New York"
 1400,"Tel Aviv, Israel",32.0852997,34.7818064,"Israel",NA,"Bnei Brak, Israel",32.0873899,34.8324376,"Israel",NA
 1401,"Los Angeles, California, United States",34.0536909,-118.242766,"United States","California","San Francisco, California, United States",37.7792588,-122.4193286,"United States","California"
@@ -862,7 +862,7 @@
 1436,"Kolkata, West Bengal, India",22.5726459,88.3638953,"India",NA,"Mumbai, Maharashtra, India",19.054999,72.8692035,"India",NA
 1437,"Kolkata, West Bengal, India",22.5726459,88.3638953,"India",NA,"Kolkata, West Bengal, India",22.5726459,88.3638953,"India",NA
 1438,"Kolkata, West Bengal, India",22.5726459,88.3638953,"India",NA,"Kolkata, West Bengal, India",22.5726459,88.3638953,"India",NA
-1439,"Hissar, Haryana, India",29.813025,76.4776537,"India",NA,"Mumbai, Maharashtra, India",19.054999,72.8692035,"India",NA
+1439,"Hisar, Haryana, India",29.2396596,75.8174505,"India",NA,"Mumbai, Maharashtra, India",19.054999,72.8692035,"India",NA
 1440,"Vienna, Austria",48.2083537,16.3725042,"Austria",NA,"Vienna, Austria",48.2083537,16.3725042,"Austria",NA
 1441,"Freeport, Texas, United States",28.9496782,-95.3461433,"United States","Texas","Fort Worth, Texas, United States",32.753177,-97.3327459,"United States","Texas"
 1442,"Singapore, Singapore",1.357107,103.8194992,"Singapore",NA,"Singapore, Singapore",1.357107,103.8194992,"Singapore",NA
@@ -885,7 +885,7 @@
 1472,"Nazareth, Israel",32.7046364,35.2971854,"Israel",NA,"Beverly Hills, California, United States",34.0696501,-118.3963062,"United States","California"
 1473,"Nazareth, Israel",32.7046364,35.2971854,"Israel",NA,"Beverly Hills, California, United States",34.0696501,-118.3963062,"United States","California"
 1475,"New York, New York, United States",40.7127281,-74.0060152,"United States","New York","Rye, New York, United States",40.9821371,-73.6840902,"United States","New York"
-1477,"New Taipei City, Taiwan",25.063267,121.45788,"Taiwan",NA,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA
+1477,"New Taipei City, Taiwan",25.0125,121.465,"Taiwan",NA,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA
 1480,"Detroit, Michigan, United States",42.3315509,-83.046640300000007,"United States","Michigan","Chicago, Illinois, United States",41.8755616,-87.6244212,"United States","Illinois"
 1481,"Salvador, Bahia, Brazil",-12.9822499,-38.4812772,"Brazil",NA,"Salvador, Bahia, Brazil",-12.9822499,-38.4812772,"Brazil",NA
 1482,"Vienna, Austria",48.2083537,16.3725042,"Austria",NA,"Vienna, Austria",48.2083537,16.3725042,"Austria",NA
@@ -893,7 +893,7 @@
 1484,"Chicago, Illinois, United States",41.8755616,-87.6244212,"United States","Illinois","Skokie, Illinois, United States",42.0262972,-87.7521069,"United States","Illinois"
 1485,"New Orleans, Louisiana, United States",29.9559145,-90.0730259,"United States","Louisiana","Baton Rouge, Louisiana, United States",30.4494155,-91.1869659,"United States","Louisiana"
 1486,"San Diego, California, United States",32.7174202,-117.162772,"United States","California","Kauai, Hawaii, United States",22.0503838,-159.5588624,"United States","Hawaii"
-1487,"East London, South Africa",-33.0191604,27.8998573,"South Africa",NA,"Hamilton, Bermuda",32.2942679,-64.7853167,"Bermuda",NA
+1487,"East London, South Africa",-33.0191604,27.8998573,"South Africa",NA,"Bermuda",32.2942679,-64.7853167,"Bermuda",NA
 1488,"Highland Park, Illinois, United States",42.1836719,-87.7993245,"United States","Illinois","New York, New York, United States",40.7127281,-74.0060152,"United States","New York"
 1489,"Boston, Massachusetts, United States",42.3554334,-71.060511,"United States","Massachusetts","London, United Kingdom",51.4893335,-0.1440551,"United Kingdom",NA
 1490,"London, United Kingdom",51.4893335,-0.1440551,"United Kingdom",NA,"London, United Kingdom",51.4893335,-0.1440551,"United Kingdom",NA
@@ -938,9 +938,9 @@
 1563,"Nittedal, Norway",60.0804543,10.8566109,"Norway",NA,"Lucerne, Switzerland",47.0505452,8.3054682,"Switzerland",NA
 1564,"Buffalo, New York, United States",42.8867166,-78.8783922,"United States","New York","Erie, Pennsylvania, United States",42.1294712,-80.0852695,"United States","Pennsylvania"
 1566,"Solna, Sweden",59.366667,18.016667,"Sweden",NA,"Stockholm, Sweden",59.3251172,18.0710935,"Sweden",NA
-1568,"Athens, Greece",37.9755648,23.7348324,"Greece",NA,"Monte Carlo, Monaco",43.7402961,7.426559,"Monaco",NA
-1569,"London, United Kingdom",51.4893335,-0.1440551,"United Kingdom",NA,"Monaco, Monaco",43.7323492,7.4276832,"Monaco",NA
-1570,"Athens, Greece",37.9755648,23.7348324,"Greece",NA,"Monte Carlo, Monaco",43.7402961,7.426559,"Monaco",NA
+1568,"Athens, Greece",37.9755648,23.7348324,"Greece",NA,"Monaco",43.7323492,7.4276832,"Monaco",NA
+1569,"London, United Kingdom",51.4893335,-0.1440551,"United Kingdom",NA,"Monaco",43.7323492,7.4276832,"Monaco",NA
+1570,"Athens, Greece",37.9755648,23.7348324,"Greece",NA,"Monaco",43.7323492,7.4276832,"Monaco",NA
 1574,"Kansas City, Kansas, United States",39.1134562,-94.626497,"United States","Kansas","Mission Hills, Kansas, United States",39.0177834,-94.6169014,"United States","Kansas"
 1579,"Springfield, Massachusetts, United States",42.1018764,-72.5886727,"United States","Massachusetts","Paradise Valley, Arizona, United States",33.5324295,-111.9505123,"United States","Arizona"
 1584,"Vilnius, Lithuania",54.6870458,25.2829111,"Lithuania",NA,"Mumbai, Maharashtra, India",19.054999,72.8692035,"India",NA
@@ -1014,7 +1014,7 @@
 1708,"Mumbai, Maharashtra, India",19.054999,72.8692035,"India",NA,"Mumbai, Maharashtra, India",19.054999,72.8692035,"India",NA
 1712,"Kearney, Nebraska, United States",40.4906216,-98.9472344,"United States","Nebraska","Kearney, Nebraska, United States",40.4906216,-98.9472344,"United States","Nebraska"
 1714,"Hong Kong, China",22.2793278,114.1628131,"China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
-1715,"Macau, Macau SAR China",22.15781845,113.5603524,"Macau SAR China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
+1715,"Macau, China",22.15781845,113.5603524,"Macau SAR China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
 1716,"Hong Kong, China",22.2793278,114.1628131,"China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
 1718,"Bích Khê, Quảng Trị Province, Vietnam",16.76667,107.2,"Vietnam",NA,"Westlake Village, California, United States",34.1460234,-118.8061794,"United States","California"
 1719,"Lima, Peru",-12.0459808,-77.0305912,"Peru",NA,"Lima, Peru",-12.0459808,-77.0305912,"Peru",NA
@@ -1080,7 +1080,7 @@
 1820,"South Hwanghae Province, North Korea",38.2,125.53333,"North Korea",NA,"Seoul, South Korea",37.5666791,126.9782914,"South Korea",NA
 1822,"Antwerp, Belgium",51.2211097,4.3997081,"Belgium",NA,"Kent, United Kingdom",51.2070749,0.7210362,"United Kingdom",NA
 1823,"Yilan, Taiwan",24.7519538,121.7533344,"Taiwan",NA,"Taoyuan, Taiwan",24.9929995,121.3010003,"Taiwan",NA
-1824,"Pingtung, Taiwan",22.6828017,120.487928,"Taiwan",NA,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA
+1824,"Pingtung, Taiwan",22.6828017,120.487928,"Taiwan",NA,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA
 1826,"Fergana, Uzbekistan",40.3983651,71.7875574,"Uzbekistan",NA,"Almaty, Kazakhstan",43.2363924,76.9457275,"Kazakhstan",NA
 1827,"Wadi Halfa, Sudan",21.8005,31.350737,"Sudan",NA,"London, United Kingdom",51.4893335,-0.1440551,"United Kingdom",NA
 1828,"New York, New York, United States",40.7127281,-74.0060152,"United States","New York","Indian Creek, Florida, United States",25.8771392,-80.1372166,"United States","Florida"
@@ -1089,10 +1089,10 @@
 1833,"Darende, Malatya, Turkey",38.5587614,37.4904835,"Turkey",NA,"Ankara, Turkey",39.9207759,32.8540497,"Turkey",NA
 1834,"Qırmızı Qəsəbə, Quba, Azerbaijan",41.3706547,48.5163558,"Azerbaijan",NA,"Moscow, Russia",55.625578,37.6063916,"Russia",NA
 1835,"Dearborn, Michigan, United States",42.3222599,-83.1763145,"United States","Michigan","Bingham Farms, Michigan, United States",42.515868,-83.2732643,"United States","Michigan"
-1839,"Kagoshima, Japan",31.521587,130.5474077,"Japan",NA,"Kyoto, Kyoto, Japan",34.9846076,135.7584303,"Japan",NA
+1839,"Kagoshima, Kagoshima, Japan",31.521587,130.5474077,"Japan",NA,"Kyoto, Kyoto, Japan",34.9846076,135.7584303,"Japan",NA
 1840,"Casula, New South Wales, Australia",-33.9522222,150.8952778,"Australia",NA,"Sydney, Australia",-33.8698439,151.2082848,"Australia",NA
 1841,"Charleston, South Carolina, United States",32.7884363,-79.9399309,"United States","South Carolina","Nashville, Tennessee, United States",36.1622767,-86.7742984,"United States","Tennessee"
-1842,"Stalinsk, Russia",53.7575903,87.1358494,"Russia",NA,"Zug, Switzerland",47.1486137,8.5539378,"Switzerland",NA
+1842,"Novokuznetsk, Russia",53.7575903,87.1358494,"Russia",NA,"Zug, Switzerland",47.1486137,8.5539378,"Switzerland",NA
 1843,"Beirut, Lebanon",33.8892265,35.5025585,"Lebanon",NA,"Los Angeles, California, United States",34.0536909,-118.242766,"United States","California"
 1844,"Lincolnwood, Illinois, United States",42.0055985,-87.735572,"United States","Illinois","Carmel, Indiana, United States",39.9784186,-86.1283681,"United States","Indiana"
 1845,"Saint John, New Brunswick, Canada",45.2787992,-66.0585188,"Canada",NA,"Saint John, New Brunswick, Canada",45.2787992,-66.0585188,"Canada",NA
@@ -1125,19 +1125,19 @@
 1907,"Hyderabad, Telangana, India",17.360589,78.4740613,"India",NA,"Mumbai, Maharashtra, India",19.054999,72.8692035,"India",NA
 1909,"Dangtu County, Anhui, China",31.4644184,118.6400257,"China",NA,"Nanjing, Jiangsu, China",32.0438284,118.7788631,"China",NA
 1910,"Shantou, Guangdong, China",23.3563921,116.6775856,"China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
-1911,"Zhongning County, Zhongwei City, Ningxia, China",37.3457259,105.6424745,"China",NA,"Yinchuan, China",38.4852037,106.2261926,"China",NA
+1911,"Zhongning County, Zhongwei, Ningxia, China",37.3457259,105.6424745,"China",NA,"Yinchuan, Ningxia, China",38.4852037,106.2261926,"China",NA
 1914,"Weihai, Shandong, China",37.5120997,122.1152599,"China",NA,"Weifang, Shandong, China",36.7071591,119.1557441,"China",NA
 1915,"Shidao, Weihai, Shandong, China",36.9731983,122.5264459,"China",NA,"Weifang, Shandong, China",36.7071591,119.1557441,"China",NA
 1918,"Zhaoqing, Guangdong, China",23.0501661,112.4603629,"China",NA,"Guangzhou, Guangdong, China",23.1301964,113.2592945,"China",NA
 1919,"Shanghai, China",31.2323437,121.4691024,"China",NA,"Shanghai, China",31.2323437,121.4691024,"China",NA
 1922,"Qixia County, Yantai City, Shandong, China",37.21696,120.8153,"China",NA,"Anshun, Guizhou, China",26.254911,105.9437773,"China",NA
 1924,"Dalian, Liaoning, China",39.740278000000004,122.255833,"China",NA,"Shenzhen, Guangdong, China",22.5445741,114.0545429,"China",NA
-1925,"Chongqing, Chongqing, China",30.8101669,108.4034084,"China",NA,"Chongqing, China",30.05518,107.8748712,"China",NA
+1925,"Chongqing, Chongqing, China",30.8101669,108.4034084,"China",NA,"Chongqing, Chongqing, China",30.8101669,108.4034084,"China",NA
 1926,"Zhoushan, Zhejiang, China",29.9873344,122.2030363,"China",NA,"Shanghai, China",31.2323437,121.4691024,"China",NA
 1927,"Nantong, Jiangsu, China",31.9827896,120.8904588,"China",NA,"Shanghai, China",31.2323437,121.4691024,"China",NA
 1929,"Bangkok, Thailand",13.7524938,100.4935089,"Thailand",NA,"Bangkok, Thailand",13.7524938,100.4935089,"Thailand",NA
 1933,"Shanghai, China",31.2323437,121.4691024,"China",NA,"Shanghai, China",31.2323437,121.4691024,"China",NA
-1935,"Tinsukia, Assam, India",27.4879722,95.3601855,"India",NA,"Hisar, India",29.2396596,75.8174505,"India",NA
+1935,"Tinsukia, Assam, India",27.4879722,95.3601855,"India",NA,"Hisar, Haryana, India",29.2396596,75.8174505,"India",NA
 1942,"New York, New York, United States",40.7127281,-74.0060152,"United States","New York","Stockholm, Sweden",59.3251172,18.0710935,"Sweden",NA
 1943,"Hickory, Mississippi, United States",32.3176442,-89.0256113,"United States","Mississippi","Palm Beach, Florida, United States",26.6279798,-80.4494174,"United States","Florida"
 1946,"Boston, Massachusetts, United States",42.3554334,-71.060511,"United States","Massachusetts","Boston, Massachusetts, United States",42.3554334,-71.060511,"United States","Massachusetts"
@@ -1281,9 +1281,9 @@
 2180,"Jinju, Gyeongsangnam-do, South Korea",35.1803459,128.1079953,"South Korea",NA,"Seoul, South Korea",37.5666791,126.9782914,"South Korea",NA
 2181,"Busan, South Korea",35.1799528,129.0752365,"South Korea",NA,"Seoul, South Korea",37.5666791,126.9782914,"South Korea",NA
 2184,"Seoul, South Korea",37.5666791,126.9782914,"South Korea",NA,"Seoul, South Korea",37.5666791,126.9782914,"South Korea",NA
-2185,"Lukang Township, Changhua, Taiwan",24.055092,120.431341,"Taiwan",NA,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA
-2186,"Lukang Township, Changhua, Taiwan",24.055092,120.431341,"Taiwan",NA,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA
-2189,"Lukang Township, Changhua, Taiwan",24.055092,120.431341,"Taiwan",NA,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA
+2185,"Lukang Township, Changhua, Taiwan",24.055092,120.431341,"Taiwan",NA,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA
+2186,"Lukang Township, Changhua, Taiwan",24.055092,120.431341,"Taiwan",NA,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA
+2189,"Lukang Township, Changhua, Taiwan",24.055092,120.431341,"Taiwan",NA,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA
 2192,"Madrid, Spain",40.416782,-3.703507,"Spain",NA,"Madrid, Spain",40.416782,-3.703507,"Spain",NA
 2193,"Madrid, Spain",40.416782,-3.703507,"Spain",NA,"Madrid, Spain",40.416782,-3.703507,"Spain",NA
 2195,"Long Island, New York, United States",40.8514971,-73.0994297,"United States","New York","New York, New York, United States",40.7127281,-74.0060152,"United States","New York"
@@ -1333,7 +1333,7 @@
 2257,"Jakarta, Indonesia",-6.1754049,106.827168,"Indonesia",NA,"Singapore, Singapore",1.357107,103.8194992,"Singapore",NA
 2268,"Hong Kong, China",22.2793278,114.1628131,"China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
 2271,"Hong Kong, China",22.2793278,114.1628131,"China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
-2272,"Macau, Macau SAR China",22.15781845,113.5603524,"Macau SAR China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
+2272,"Macau, China",22.15781845,113.5603524,"Macau SAR China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
 2274,"Guangzhou, Guangdong, China",23.1301964,113.2592945,"China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
 2276,"Orimattila, Finland",60.805137,25.733355799999998,"Finland",NA,"Helsinki, Finland",60.1698897,24.9384719,"Finland",NA
 2277,"New Bedford, Massachusetts, United States",41.6362152,-70.934205,"United States","Massachusetts","Atherton, California, United States",37.453773,-122.2058272,"United States","California"
@@ -1342,16 +1342,16 @@
 2287,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
 2288,"Pune, Maharashtra, India",18.5213738,73.8545071,"India",NA,"New Delhi, India",28.6419258,77.2217499,"India",NA
 2290,"Quebec City, Quebec, Canada",46.8137431,-71.2084061,"Canada",NA,"Montreal, Quebec, Canada",45.5031824,-73.5698065,"Canada",NA
-2292,"Shanghai, China",31.2323437,121.4691024,"China",NA,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA
+2292,"Shanghai, China",31.2323437,121.4691024,"China",NA,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA
 2294,"Huian, Fujian, China",25.0606368,118.7096977,"China",NA,"Xiamen, Fujian, China",24.5438732,118.0768065,"China",NA
 2295,"Hong Kong, China",22.2793278,114.1628131,"China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
 2297,"Roslyn, New York, United States",40.7998227,-73.6509621,"United States","New York","Miami Beach, Florida, United States",25.7929198,-80.1353006,"United States","Florida"
 2301,"Lerici, La Spezia, Italy",44.0736073,9.9099135,"Italy",NA,"Fiesole, Italy",43.8066689,11.2930735,"Italy",NA
 2303,"Krumbach, Germany",48.2430587,10.3631004,"Germany",NA,"Gräfelfing, Germany",48.118889,11.428889,"Germany",NA
 2304,"Albany, New York, United States",42.6511674,-73.754968,"United States","New York","Boston, Massachusetts, United States",42.3554334,-71.060511,"United States","Massachusetts"
-2306,"Nottingham, Nottinghamshire, United Kingdom",52.9534193,-1.1496461,"United Kingdom",NA,"Nottinghamshire, United Kingdom",53.1459288,-1.0214971,"United Kingdom",NA
+2306,"Nottingham, Nottinghamshire, United Kingdom",52.9534193,-1.1496461,"United Kingdom",NA,"Farnsfield, Nottinghamshire, United Kingdom",53.1027127,-1.0371112,"United Kingdom",NA
 2309,"Roslyn Heights, New York, United States",40.7766105,-73.6339769,"United States","New York","Sands Point, New York, United States",40.8517669,-73.718742,"United States","New York"
-2310,"Bristol, United Kingdom",51.4538022,-2.5972985,"United Kingdom",NA,"St. Peter Port, Channel Islands",49.4578405,-2.5349672,"Channel Islands",NA
+2310,"Bristol, United Kingdom",51.4538022,-2.5972985,"United Kingdom",NA,"Guernsey, Channel Islands",49.45,-2.58,"Channel Islands",NA
 2311,"Kashan, Iran",33.9876533,51.4428856,"Iran",NA,"Los Angeles, California, United States",34.0536909,-118.242766,"United States","California"
 2312,"Mexico City, Mexico",19.3207722,-99.1514678,"Mexico",NA,"Mexico City, Mexico",19.3207722,-99.1514678,"Mexico",NA
 2314,"San Francisco, California, United States",37.7792588,-122.4193286,"United States","California","San Francisco, California, United States",37.7792588,-122.4193286,"United States","California"
@@ -1392,7 +1392,7 @@
 2368,"Seoul, South Korea",37.5666791,126.9782914,"South Korea",NA,"Seoul, South Korea",37.5666791,126.9782914,"South Korea",NA
 2369,"Chungju, Chungcheongbuk-do, South Korea",36.9907334,127.9259891,"South Korea",NA,"Seoul, South Korea",37.5666791,126.9782914,"South Korea",NA
 2372,"Quanzhou, Fujian, China",25.1901863,118.338717,"China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
-2373,"Macau, Macau SAR China",22.15781845,113.5603524,"Macau SAR China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
+2373,"Macau, China",22.15781845,113.5603524,"Macau SAR China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
 2374,"Seoul, South Korea",37.5666791,126.9782914,"South Korea",NA,"Seoul, South Korea",37.5666791,126.9782914,"South Korea",NA
 2375,"Qionghai, Hainan, China",19.2592373,110.4703445,"China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
 2376,"Hong Kong, China",22.2793278,114.1628131,"China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
@@ -1430,18 +1430,18 @@
 2429,"Hong Kong, China",22.2793278,114.1628131,"China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
 2432,"Renshou, Sichuan, China",29.9811089,104.2204271,"China",NA,"Shenzhen, Guangdong, China",22.5445741,114.0545429,"China",NA
 2434,"Xiaoshan, Zhejiang, China",30.1861821,120.2597528,"China",NA,"Hangzhou, Zhejiang, China",30.2489634,120.2052342,"China",NA
-2436,"Pingdingshan, Henan, China",33.7419956,113.3002154,"China",NA,"Ruzhou, China",34.1678145,112.8392579,"China",NA
-2437,"Linruzhen, Henan, China",34.2672929,112.6189028,"China",NA,"Ruzhou, China",34.1678145,112.8392579,"China",NA
+2436,"Pingdingshan, Henan, China",33.7419956,113.3002154,"China",NA,"Ruzhou, Henan, China",34.1678145,112.8392579,"China",NA
+2437,"Linruzhen, Henan, China",34.2672929,112.6189028,"China",NA,"Ruzhou, Henan, China",34.1678145,112.8392579,"China",NA
 2438,"Tonghua, Jilin, China",42.123889,125.848333,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
-2444,"Nanyang, Henan, China",33.0010496,112.5292693,"China",NA,"Fushun, China",41.8011658,124.7459491,"China",NA
+2444,"Nanyang, Henan, China",33.0010496,112.5292693,"China",NA,"Fushun, Liaoning, China",41.8011658,124.7459491,"China",NA
 2445,"Laizhou, Shandong, China",37.1773133,119.9370943,"China",NA,"Laizhou, Shandong, China",37.1773133,119.9370943,"China",NA
 2447,"Yulin, Guangxi, China",22.4199189,110.2143149,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
 2449,"Wenzhou, Zhejiang, China",27.9963899,120.695345,"China",NA,"Shanghai, China",31.2323437,121.4691024,"China",NA
 2453,"Heyuan, Guangdong, China",23.746777,114.6954482,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
-2455,"Jining, Shandong, China",35.4125047,116.5849266,"China",NA,"Yanzhou, China",36.602796,109.4873978,"China",NA
+2455,"Jining, Shandong, China",35.4125047,116.5849266,"China",NA,"Yanzhou, Shandong, China",36.602796,109.4873978,"China",NA
 2461,"Cangzhou, Hebei, China",38.3042796,116.8511597,"China",NA,"Tianjin, Tianjin, China",39.0844897,117.1956724,"China",NA
 2463,"Meishan, Sichuan, China",29.9866838,103.7790009,"China",NA,"Changsha, Hunan, China",28.1450774,113.2384362,"China",NA
-2464,"Fengcheng, Jiangxi, China",28.1407202,115.8470525,"China",NA,"Xinyu, China",27.853572,114.8867147,"China",NA
+2464,"Fengcheng, Jiangxi, China",28.1407202,115.8470525,"China",NA,"Xinyu, Jiangxi, China",27.853572,114.8867147,"China",NA
 2469,"Yangquan, Shanxi, China",38.0935972,113.5265601,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
 2473,"Taizhou, Zhejiang, China",28.6581723,121.4163876,"China",NA,"Hangzhou, Zhejiang, China",30.2489634,120.2052342,"China",NA
 2475,"Hong Kong, China",22.2793278,114.1628131,"China",NA,"Guangzhou, Guangdong, China",23.1301964,113.2592945,"China",NA
@@ -1456,8 +1456,8 @@
 2490,"Wenxi, Shanxi, China",35.390079,111.307578,"China",NA,"Wenxi, Shanxi, China",35.390079,111.307578,"China",NA
 2491,"Tongcheng, Anhui, China",31.0382269,116.9689629,"China",NA,"Hefei, Anhui, China",31.8665676,117.281428,"China",NA
 2492,"Xuchang, Henan, China",34.147778,113.714722,"China",NA,"Xi'an, Shaanxi, China",34.261004,108.9423363,"China",NA
-2497,"Huazhou, Guangdong, China",21.8302699,110.5300134,"China",NA,"Xi'an, Shaanxi, China",38.1904931,116.1191021,"China",NA
-2498,"Linshu County, Shandong, China",34.9137378,118.6343077,"China",NA,"Linyi, China",35.1032403,118.3506988,"China",NA
+2497,"Huazhou, Guangdong, China",21.8302699,110.5300134,"China",NA,"Xi'an, Shaanxi, China",34.261004,108.9423363,"China",NA
+2498,"Linshu County, Shandong, China",34.9137378,118.6343077,"China",NA,"Linyi, Shandong, China",35.1032403,118.3506988,"China",NA
 2499,"Zhuqi Township, Chiayi County, Taiwan",23.5227654,120.5507086,"Taiwan",NA,"San Jose, California, United States",37.3361663,-121.890591,"United States","California"
 2501,"Linhai, Zhejiang, China",28.8616886,121.1402223,"China",NA,"Shenzhen, Guangdong, China",22.5445741,114.0545429,"China",NA
 2502,"Quanjiao County, Chuzhou, Anhui, China",32.0881937,118.2687495,"China",NA,"Nanjing, Jiangsu, China",32.0438284,118.7788631,"China",NA
@@ -1465,7 +1465,7 @@
 2506,"Zhuhai, Guangdong, China",22.273734,113.5721327,"China",NA,"Zhuhai, Guangdong, China",22.273734,113.5721327,"China",NA
 2507,"Lianyuan, Hunan, China",27.738153,111.7776649,"China",NA,"Changsha, Hunan, China",28.1450774,113.2384362,"China",NA
 2509,"Langqi, Fuzhou, China",26.0861662,119.5732149,"China",NA,"Fuzhou, Fujian, China",26.0774954,119.2918215,"China",NA
-2512,"Shunde District, Foshan, Guangdong, China",22.83056,113.21556,"China",NA,"Foshan, Guangdong, China",23.0239788,113.1159558,"China",NA
+2512,"Shunde, Guangdong, China",22.8054891,113.2894243,"China",NA,"Foshan, Guangdong, China",23.0239788,113.1159558,"China",NA
 2514,"Arlington Heights, Illinois, United States",42.0811563,-87.9802164,"United States","Illinois","Key Largo, Florida, United States",25.091338,-80.4677741,"United States","Florida"
 2515,"New York, New York, United States",40.7127281,-74.0060152,"United States","New York","Monsey, New York, United States",41.117991,-74.0594324,"United States","New York"
 2518,"Minneapolis, Minnesota, United States",44.9772995,-93.2654692,"United States","Minnesota","Austin, Texas, United States",30.2711286,-97.7436995,"United States","Texas"
@@ -1478,16 +1478,16 @@
 2531,"Titi, Negeri Sembilan, Malaysia",2.9974971,102.0765586,"Malaysia",NA,"Kuala Lumpur, Malaysia",3.1526589,101.7022205,"Malaysia",NA
 2532,"Zhangzhou, Fujian, China",24.2388257,117.4524304,"China",NA,"Xiamen, Fujian, China",24.5438732,118.0768065,"China",NA
 2533,"Zhangzhou, Fujian, China",24.2388257,117.4524304,"China",NA,"Xiamen, Fujian, China",24.5438732,118.0768065,"China",NA
-2537,"New Taipei City, Taiwan",25.063267,121.45788,"Taiwan",NA,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA
-2539,"Yilan, Taiwan",24.7519538,121.7533344,"Taiwan",NA,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA
+2537,"New Taipei City, Taiwan",25.0125,121.465,"Taiwan",NA,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA
+2539,"Yilan, Taiwan",24.7519538,121.7533344,"Taiwan",NA,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA
 2540,"Jinjiang, Fujian, China",24.784435,118.5477505,"China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
 2541,"Fuzhou, Fujian, China",26.0774954,119.2918215,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
-2542,"Linjiawan'Gounan Village, Linyi, Shandong, China",35.1522,118.566,"China",NA,"Linyi, China",35.1032403,118.3506988,"China",NA
-2546,"New Taipei City, Taiwan",25.063267,121.45788,"Taiwan",NA,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA
-2547,"New Taipei City, Taiwan",25.063267,121.45788,"Taiwan",NA,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA
+2542,"Linjiawan'Gounan Village, Linyi, Shandong, China",35.1522,118.566,"China",NA,"Linyi, Shandong, China",35.1032403,118.3506988,"China",NA
+2546,"New Taipei City, Taiwan",25.0125,121.465,"Taiwan",NA,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA
+2547,"New Taipei City, Taiwan",25.0125,121.465,"Taiwan",NA,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA
 2548,"Shanwei, Guangdong, China",23.0123639,115.5099937,"China",NA,"Shenzhen, Guangdong, China",22.5445741,114.0545429,"China",NA
 2549,"Kaohsiung, Taiwan",22.6203348,120.3120375,"Taiwan",NA,"Taichung, Taiwan",24.163162,120.6478282,"Taiwan",NA
-2550,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA
+2550,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA
 2551,"Hong Kong, China",22.2793278,114.1628131,"China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
 2553,"Fuzhou, Fujian, China",26.0774954,119.2918215,"China",NA,"Shanghai, China",31.2323437,121.4691024,"China",NA
 2554,"Fuzhou, Jiangxi, China",27.502232,116.415177,"China",NA,"Shanghai, China",31.2323437,121.4691024,"China",NA
@@ -1499,7 +1499,7 @@
 2563,"Ivanovo, Russia",56.9956855,40.9812104,"Russia",NA,"Moscow, Russia",55.625578,37.6063916,"Russia",NA
 2567,"St. Petersburg, Russia",59.938732,30.316229,"Russia",NA,"Dubai, United Arab Emirates",25.0742823,55.1885387,"United Arab Emirates",NA
 2568,"Novoleninsky, Russia",50.8954,35.7765,"Russia",NA,"St. Petersburg, Russia",59.938732,30.316229,"Russia",NA
-2570,"Macau, Macau SAR China",22.15781845,113.5603524,"Macau SAR China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
+2570,"Macau, China",22.15781845,113.5603524,"Macau SAR China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
 2571,"Xinjin County, Sichuan, China",30.4157345,103.8068584,"China",NA,"Chengdu, Sichuan, China",30.659867,104.063315,"China",NA
 2572,"Xinjin County, Sichuan, China",30.4157345,103.8068584,"China",NA,"Shanghai, China",31.2323437,121.4691024,"China",NA
 2575,"Handan, Hebei, China",36.6107711,114.4857072,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
@@ -1513,7 +1513,7 @@
 2585,"Meishan, Sichuan, China",29.9866838,103.7790009,"China",NA,"Chengdu, Sichuan, China",30.659867,104.063315,"China",NA
 2587,"Guiyang, Guizhou, China",26.6499922,106.6246178,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
 2595,"Suqian, Jiangsu, China",33.9644701,118.2696994,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
-2596,"Xi'an, Shaanxi, China",34.2423181,108.8856319,"China",NA,"Shenzhen, Guangdong, China",22.5445741,114.0545429,"China",NA
+2596,"Xi'an, Shaanxi, China",34.261004,108.9423363,"China",NA,"Shenzhen, Guangdong, China",22.5445741,114.0545429,"China",NA
 2599,"Ningxiang, Hunan, China",28.1404226,112.3652444,"China",NA,"Shanghai, China",31.2323437,121.4691024,"China",NA
 2604,"Liaocheng, Shandong, China",36.4441808,115.9642007,"China",NA,"Liaocheng, Shandong, China",36.4441808,115.9642007,"China",NA
 2608,"Baixiangzhen, Yueyang County, Hunan, China",29.32472,113.302,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
@@ -1526,7 +1526,7 @@
 2619,"Madrid, Spain",40.416782,-3.703507,"Spain",NA,"Madrid, Spain",40.416782,-3.703507,"Spain",NA
 2620,"Hong Kong, China",22.2793278,114.1628131,"China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
 2623,"Hong Kong, China",22.2793278,114.1628131,"China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
-2624,"Chongqing, Chongqing, China",30.8101669,108.4034084,"China",NA,"Chongqing, China",30.05518,107.8748712,"China",NA
+2624,"Chongqing, Chongqing, China",30.8101669,108.4034084,"China",NA,"Chongqing, Chongqing, China",30.8101669,108.4034084,"China",NA
 2625,"Fanyu, Guangdong, China",22.9480063,113.3508906,"China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
 2627,"Jodhpur, Rajasthan, India",26.2967719,73.0351433,"India",NA,"Mumbai, Maharashtra, India",19.054999,72.8692035,"India",NA
 2628,"Santa Monica, California, United States",34.0194704,-118.491227,"United States","California","New York, New York, United States",40.7127281,-74.0060152,"United States","New York"
@@ -1770,7 +1770,7 @@
 3001,"Springfield, Missouri, United States",37.2081729,-93.2922715,"United States","Missouri","Springfield, Missouri, United States",37.2081729,-93.2922715,"United States","Missouri"
 3002,"Liverpool, United Kingdom",53.4071991,-2.99168,"United Kingdom",NA,"Merseyside, United Kingdom",53.4953602,-2.973938,"United Kingdom",NA
 3003,"Bradford, United Kingdom",53.7944229,-1.7519186,"United Kingdom",NA,"Bradford, United Kingdom",53.7944229,-1.7519186,"United Kingdom",NA
-3004,"Abadan, Iran",30.3636097,48.2591475,"Iran",NA,"Monaco, Monaco",43.7323492,7.4276832,"Monaco",NA
+3004,"Abadan, Iran",30.3636097,48.2591475,"Iran",NA,"Monaco",43.7323492,7.4276832,"Monaco",NA
 3005,"Moscow, Russia",55.625578,37.6063916,"Russia",NA,"Moscow, Russia",55.625578,37.6063916,"Russia",NA
 3006,"Gainesville, Florida, United States",29.6519684,-82.3249846,"United States","Florida","San Francisco, California, United States",37.7792588,-122.4193286,"United States","California"
 3007,"Evanston, Illinois, United States",42.0470043,-87.6846053,"United States","Illinois","Kashiwa, Japan",35.8676218,139.9756876,"Japan",NA
@@ -1801,7 +1801,7 @@
 3047,"Duderstadt, Germany",51.5123672,10.2610699,"Germany",NA,"Duderstadt, Germany",51.5123672,10.2610699,"Germany",NA
 3048,"Muko, Kyoto, Japan",34.9487167,135.6980911,"Japan",NA,"Kyoto, Kyoto, Japan",34.9846076,135.7584303,"Japan",NA
 3049,"Beirut, Lebanon",33.8892265,35.5025585,"Lebanon",NA,"New York, New York, United States",40.7127281,-74.0060152,"United States","New York"
-3050,"Beirut, Lebanon",33.8892265,35.5025585,"Lebanon",NA,"Monte Carlo, Monaco",43.7402961,7.426559,"Monaco",NA
+3050,"Beirut, Lebanon",33.8892265,35.5025585,"Lebanon",NA,"Monaco",43.7323492,7.4276832,"Monaco",NA
 3051,"Colon, Panama",9.3553005,-79.8974085,"Panama",NA,"Coral Gables, Florida, United States",25.7331105,-80.2585107,"United States","Florida"
 3059,"Kota, Rajasthan, India",25.1737019,75.8574194,"India",NA,"Mumbai, Maharashtra, India",19.054999,72.8692035,"India",NA
 3061,"Annaba, Algeria",36.8982165,7.7549272,"Algeria",NA,"Paris, France",48.8588897,2.320041,"France",NA
@@ -1820,10 +1820,10 @@
 3078,"Morristown, New Jersey, United States",40.7970382,-74.4809868,"United States","New Jersey","San Francisco, California, United States",37.7792588,-122.4193286,"United States","California"
 3080,"Singapore, Singapore",1.357107,103.8194992,"Singapore",NA,"Singapore, Singapore",1.357107,103.8194992,"Singapore",NA
 3081,"Singapore, Singapore",1.357107,103.8194992,"Singapore",NA,"Singapore, Singapore",1.357107,103.8194992,"Singapore",NA
-3083,"Hougang, Singapore",1.3733601,103.8860907,"Singapore",NA,"Singapore, Singapore",1.357107,103.8194992,"Singapore",NA
+3083,"Singapore, Singapore",1.357107,103.8194992,"Singapore",NA,"Singapore, Singapore",1.357107,103.8194992,"Singapore",NA
 3084,"Hanoi, Vietnam",21.0283334,105.854041,"Vietnam",NA,"Ho Chi Minh City, Vietnam",10.7755254,106.7021047,"Vietnam",NA
 3085,"Quang Tri, Vietnam",17.2166964,106.9548246,"Vietnam",NA,"Ho Chi Minh City, Vietnam",10.7755254,106.7021047,"Vietnam",NA
-3086,"Changfeng, Anhui, China",32.4805394,117.161884,"China",NA,"Liuan, China",37.3539038,117.048777,"China",NA
+3086,"Changfeng, Anhui, China",32.4805394,117.161884,"China",NA,"Lu'An, Anhui, China",37.3539038,117.048777,"China",NA
 3087,"Hangzhou, Zhejiang, China",30.2489634,120.2052342,"China",NA,"Shanghai, China",31.2323437,121.4691024,"China",NA
 3088,"Taicang, Jiangsu, China",31.4590371,121.1264772,"China",NA,"Suzhou, Jiangsu, China",31.311123,120.6212881,"China",NA
 3089,"Athens, Greece",37.9755648,23.7348324,"Greece",NA,"Paris, France",48.8588897,2.320041,"France",NA
@@ -1837,7 +1837,7 @@
 3098,"Dieppe, Seine-Maritime, France",49.9246182,1.0791444,"France",NA,"Paris, France",48.8588897,2.320041,"France",NA
 3099,"Bengaluru, Karnataka, India",12.9767936,77.590082,"India",NA,"Bengaluru, Karnataka, India",12.9767936,77.590082,"India",NA
 3100,"Qırmızı Qəsəbə, Quba, Azerbaijan",41.3706547,48.5163558,"Azerbaijan",NA,"Moscow, Russia",55.625578,37.6063916,"Russia",NA
-3102,"Stamford, Lincolnshire, United Kingdom",52.6519973,-0.4804579,"United Kingdom",NA,"St. Brelade, Jersey, United Kingdom",49.18795518,-2.199587236,"United Kingdom",NA
+3102,"Stamford, Lincolnshire, United Kingdom",52.6519973,-0.4804579,"United Kingdom",NA,"St. Brelade, Jersey, Channel Islands",49.18795518,-2.199587236,"Channel Islands",NA
 3104,"Uda, Nara, Japan",34.528225,135.9526888,"Japan",NA,"Tokyo, Japan",35.6768601,139.7638947,"Japan",NA
 3105,"Moscow, Russia",55.625578,37.6063916,"Russia",NA,"Moscow, Russia",55.625578,37.6063916,"Russia",NA
 3108,"Munich, Germany",48.1371079,11.5753822,"Germany",NA,"Munich, Germany",48.1371079,11.5753822,"Germany",NA
@@ -1860,7 +1860,7 @@
 3138,"Bielefeld, Germany",52.0191005,8.531007,"Germany",NA,"Bielefeld, Germany",52.0191005,8.531007,"Germany",NA
 3139,"Munich, Germany",48.1371079,11.5753822,"Germany",NA,"Bielefeld, Germany",52.0191005,8.531007,"Germany",NA
 3142,"Bielefeld, Germany",52.0191005,8.531007,"Germany",NA,"Bielefeld, Germany",52.0191005,8.531007,"Germany",NA
-3144,"Haifa, Israel",32.8191218,34.9983856,"Israel",NA,"Monte Carlo, Monaco",43.7402961,7.426559,"Monaco",NA
+3144,"Haifa, Israel",32.8191218,34.9983856,"Israel",NA,"Monaco",43.7323492,7.4276832,"Monaco",NA
 3145,"Haifa, Israel",32.8191218,34.9983856,"Israel",NA,"London, United Kingdom",51.4893335,-0.1440551,"United Kingdom",NA
 3146,"Haifa, Israel",32.8191218,34.9983856,"Israel",NA,"Tel Aviv, Israel",32.0852997,34.7818064,"Israel",NA
 3153,"Kanturk, County Cork, Ireland",52.1876848,-8.9205697,"Ireland",NA,"Dublin, Ireland",53.3493795,-6.2605593,"Ireland",NA
@@ -1944,7 +1944,7 @@
 3280,"Rio de Janeiro, Rio de Janeiro, Brazil",-22.9110137,-43.2093727,"Brazil",NA,"Rio de Janeiro, Rio de Janeiro, Brazil",-22.9110137,-43.2093727,"Brazil",NA
 3281,"Buenos Aires, Argentina",-34.6095579,-58.3887904,"Argentina",NA,"Miami, Florida, United States",25.7741728,-80.19362,"United States","Florida"
 3282,"Buenos Aires, Argentina",-34.6095579,-58.3887904,"Argentina",NA,"Buenos Aires, Argentina",-34.6095579,-58.3887904,"Argentina",NA
-3283,"Hortaleza, Madrid, Spain",40.4725491,-3.6425515,"Spain",NA,"Madrid, Spain",40.416782,-3.703507,"Spain",NA
+3283,"Madrid, Spain",40.416782,-3.703507,"Spain",NA,"Madrid, Spain",40.416782,-3.703507,"Spain",NA
 3284,"Lainate, Milan, Italy",45.57093,9.0270637,"Italy",NA,"Lugano, Switzerland",46.0050102,8.9520281,"Switzerland",NA
 3289,"Perth, Australia",-31.9558967,115.8605784,"Australia",NA,"Sydney, Australia",-33.8698439,151.2082848,"Australia",NA
 3292,"Dallas, Texas, United States",32.7762719,-96.7968559,"United States","Texas","Dallas, Texas, United States",32.7762719,-96.7968559,"United States","Texas"
@@ -1954,7 +1954,7 @@
 3298,"New Orleans, Louisiana, United States",29.9559145,-90.0730259,"United States","Louisiana","Atlanta, Georgia, United States",33.7544657,-84.3898151,"United States","Georgia"
 3299,"Stockholm, Sweden",59.3251172,18.0710935,"Sweden",NA,"Stockholm, Sweden",59.3251172,18.0710935,"Sweden",NA
 3302,"Stockholm, Sweden",59.3251172,18.0710935,"Sweden",NA,"Stockholm, Sweden",59.3251172,18.0710935,"Sweden",NA
-3303,"Pescara, Pescara, Italy",42.469613,14.2059269,"Italy",NA,"Monte Carlo, Monaco",43.7402961,7.426559,"Monaco",NA
+3303,"Pescara, Pescara, Italy",42.469613,14.2059269,"Italy",NA,"Monaco",43.7323492,7.4276832,"Monaco",NA
 3306,"Budapest, Hungary",47.4813896,19.1460941,"Hungary",NA,"Palm Beach, Florida, United States",26.6279798,-80.4494174,"United States","Florida"
 3308,"Los Angeles, California, United States",34.0536909,-118.242766,"United States","California","Zug, Switzerland",47.1486137,8.5539378,"Switzerland",NA
 3309,"Orenburg, Russia",51.7671248,55.0978517,"Russia",NA,"Moscow, Russia",55.625578,37.6063916,"Russia",NA
@@ -1988,7 +1988,7 @@
 3355,"Bolhrad, Ukraine",45.6779137,28.6132404,"Ukraine",NA,"Kyiv, Ukraine",50.4500336,30.5241361,"Ukraine",NA
 3357,"Moscow, Russia",55.625578,37.6063916,"Russia",NA,"Moscow, Russia",55.625578,37.6063916,"Russia",NA
 3358,"Geneva, Switzerland",46.2017559,6.1466014,"Switzerland",NA,"London, United Kingdom",51.4893335,-0.1440551,"United Kingdom",NA
-3359,"Mikladalur, Denmark",62.3343,-6.7668,"Denmark",NA,"Aarhus, Denmark",56.1496278,10.2134046,"Denmark",NA
+3359,"Mikladalur, Faroe Islands, Denmark",62.3343,-6.7668,"Denmark",NA,"Aarhus, Denmark",56.1496278,10.2134046,"Denmark",NA
 3360,"West Milford, New Jersey, United States",41.1312069,-74.3673748,"United States","New Jersey","Palo Alto, California, United States",37.4443293,-122.1598465,"United States","California"
 3363,"Milan, Italy",45.4641943,9.1896346,"Italy",NA,"Milan, Italy",45.4641943,9.1896346,"Italy",NA
 3364,"Govindpur, Bihar, India",25.1619658,85.4216516,"India",NA,"New Delhi, India",28.6419258,77.2217499,"India",NA
@@ -2014,7 +2014,7 @@
 3393,"Chicago, Illinois, United States",41.8755616,-87.6244212,"United States","Illinois","Concord, Massachusetts, United States",42.4605189,-71.3488963,"United States","Massachusetts"
 3394,"Oberlin, Ohio, United States",41.2939386,-82.2173786,"United States","Ohio","Branford, Connecticut, United States",41.2795414,-72.8150989,"United States","Connecticut"
 3396,"Moscow, Russia",55.625578,37.6063916,"Russia",NA,"Frauenfeld, Switzerland",47.5561915,8.8963347,"Switzerland",NA
-3397,"Athens, Greece",37.9755648,23.7348324,"Greece",NA,"Monaco, Monaco",43.7323492,7.4276832,"Monaco",NA
+3397,"Athens, Greece",37.9755648,23.7348324,"Greece",NA,"Monaco",43.7323492,7.4276832,"Monaco",NA
 3401,"Neuilly-sur-Seine, Hauts-de-Seine, France",48.884683,2.2695658,"France",NA,"Martigny, Switzerland",46.103115,7.0727354,"Switzerland",NA
 3404,"Ulan-Ude, Russia",51.8357841,107.5839105,"Russia",NA,"Moscow, Russia",55.625578,37.6063916,"Russia",NA
 3406,"Tyumen, Russia",57.153534,65.542274,"Russia",NA,"Moscow, Russia",55.625578,37.6063916,"Russia",NA
@@ -2024,7 +2024,7 @@
 3416,"Nanyang, Henan, China",33.0010496,112.5292693,"China",NA,"Nanyang, Henan, China",33.0010496,112.5292693,"China",NA
 3418,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
 3420,"Dongyang, Zhejiang, China",29.2924528,120.2372669,"China",NA,"Hangzhou, Zhejiang, China",30.2489634,120.2052342,"China",NA
-3422,"Wenzhou, China, China",27.99942,120.66682,"China",NA,"Wenzhou, Zhejiang, China",27.9963899,120.695345,"China",NA
+3422,"Wenzhou, Zhejiang, China",27.9963899,120.695345,"China",NA,"Wenzhou, Zhejiang, China",27.9963899,120.695345,"China",NA
 3424,"Panzhihua, Sichuan, China",26.5860102,101.7179276,"China",NA,"Shenzhen, Guangdong, China",22.5445741,114.0545429,"China",NA
 3430,"Bad Homburg, Germany",50.2363508,8.5980265,"Germany",NA,"Frankfurt, Germany",50.1106444,8.6820917,"Germany",NA
 3431,"Shuangliu District, Chengdu, Sichuan, China",30.5775386,103.9212532,"China",NA,"Chengdu, Sichuan, China",30.659867,104.063315,"China",NA
@@ -2045,9 +2045,13 @@
 3458,"Abbeville, Alabama, United States",31.5702088,-85.2503315,"United States","Alabama","Abbeville, Alabama, United States",31.5702088,-85.2503315,"United States","Alabama"
 3459,"Rajam, Andhra Pradesh, India",18.4497559,83.6564679,"India",NA,"Bengaluru, Karnataka, India",12.9767936,77.590082,"India",NA
 3460,"Kudikilla Village, Kolhapur Mandal, Mahbubnagar District, Telangana, India",16.10683,78.32006,"India",NA,"Hyderabad, Telangana, India",17.360589,78.4740613,"India",NA
+3462,"Tel Aviv, Israel",32.0852997,34.7818064,"Israel",NA,"New York, New York, United States",40.7127281,-74.0060152,"United States","New York"
 3463,"Nova Kakhovka, Ukraine",46.7583404,33.3566678,"Ukraine",NA,"Lugano, Switzerland",46.0050102,8.9520281,"Switzerland",NA
 3464,"Magnitogorsk, Chelyabinsk, Russia",53.4256867,59.0507322,"Russia",NA,"Magnitogorsk, Chelyabinsk, Russia",53.4256867,59.0507322,"Russia",NA
-3469,"Failsworth, United Kingdom",53.5078105,-2.1618643,"United Kingdom",NA,"London, United Kingdom",51.4893335,-0.1440551,"United Kingdom",NA
+3465,"Pangkalan Bun, West Kotawaringin Regency, Indonesia",-2.683333,111.616667,"Indonesia",NA,"Singapore, Singapore",1.357107,103.8194992,"Singapore",NA
+3466,"Bangkok, Thailand",13.7524938,100.4935089,"Thailand",NA,"Bangkok, Thailand",13.7524938,100.4935089,"Thailand",NA
+3468,"Bangkok, Thailand",13.7524938,100.4935089,"Thailand",NA,"Bangkok, Thailand",13.7524938,100.4935089,"Thailand",NA
+3469,"Failsworth, United Kingdom",53.5078105,-2.1618643,"United Kingdom",NA,"Monaco",43.7323492,7.4276832,"Monaco",NA
 3471,"Lund, Sweden",55.7029296,13.1929449,"Sweden",NA,"London, United Kingdom",51.4893335,-0.1440551,"United Kingdom",NA
 3474,"Lund, Sweden",55.7029296,13.1929449,"Sweden",NA,"Surrey, United Kingdom",51.2715316,-0.3414524,"United Kingdom",NA
 3476,"Lund, Sweden",55.7029296,13.1929449,"Sweden",NA,"Newmarket, United Kingdom",52.2443103,0.4065503,"United Kingdom",NA
@@ -2080,7 +2084,7 @@
 3520,"New York, New York, United States",40.7127281,-74.0060152,"United States","New York","Beverly Hills, California, United States",34.0696501,-118.3963062,"United States","California"
 3521,"Washington, District of Columbia, United States",38.8950368,-77.0365427,"United States","District of Columbia","Los Angeles, California, United States",34.0536909,-118.242766,"United States","California"
 3522,"Mumbai, Maharashtra, India",19.054999,72.8692035,"India",NA,"London, United Kingdom",51.4893335,-0.1440551,"United Kingdom",NA
-3523,"Mumbai, Maharashtra, India",19.054999,72.8692035,"India",NA,"Monaco, Monaco",43.7323492,7.4276832,"Monaco",NA
+3523,"Mumbai, Maharashtra, India",19.054999,72.8692035,"India",NA,"Monaco",43.7323492,7.4276832,"Monaco",NA
 3524,"Rosario, Argentina",-32.9593609,-60.6617024,"Argentina",NA,"Madrid, Spain",40.416782,-3.703507,"Spain",NA
 3525,"Washington, District of Columbia, United States",38.8950368,-77.0365427,"United States","District of Columbia","Palm Beach, Florida, United States",26.6279798,-80.4494174,"United States","Florida"
 3526,"Washington, District of Columbia, United States",38.8950368,-77.0365427,"United States","District of Columbia","Hobe Sound, Florida, United States",27.080492,-80.139918,"United States","Florida"
@@ -2153,7 +2157,7 @@
 3634,"Newport Beach, California, United States",33.6170092,-117.9294401,"United States","California","Orlando, Florida, United States",28.5421109,-81.3790304,"United States","Florida"
 3636,"Milwaukee, Wisconsin, United States",43.0386475,-87.9090751,"United States","Wisconsin","Winnetka, Illinois, United States",42.1080703,-87.7365286,"United States","Illinois"
 3637,"Magnitogorsk, Chelyabinsk, Russia",53.4256867,59.0507322,"Russia",NA,"Moscow, Russia",55.625578,37.6063916,"Russia",NA
-3638,"Perm, Russia",58.0108531,56.2318528,"Russia",NA,"Monaco, Monaco",43.7323492,7.4276832,"Monaco",NA
+3638,"Perm, Russia",58.0108531,56.2318528,"Russia",NA,"Monaco",43.7323492,7.4276832,"Monaco",NA
 3640,"Gunwi-gun, Gyeongsangbuk-do, South Korea",36.1181736,128.5725455,"South Korea",NA,"Busan, South Korea",35.1799528,129.0752365,"South Korea",NA
 3641,"Durban, South Africa",-29.861825,31.009909,"South Africa",NA,"Durban, South Africa",-29.861825,31.009909,"South Africa",NA
 3644,"Beirut, Lebanon",33.8892265,35.5025585,"Lebanon",NA,"Marseille, France",43.2961743,5.3699525,"France",NA
@@ -2281,8 +2285,8 @@
 3846,"Oryol, Russia",52.9709262,36.0642127,"Russia",NA,"Geneva, Switzerland",46.2017559,6.1466014,"Switzerland",NA
 3847,"Moscow, Russia",55.625578,37.6063916,"Russia",NA,"Moscow, Russia",55.625578,37.6063916,"Russia",NA
 3851,"Haining, Zhejiang, China",30.5142256,120.6759733,"China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
-3852,"Suzhou, Jiangsu, China",31.311123,120.6212881,"China",NA,"Zhangjiagang, China",31.8782976,120.55145950000001,"China",NA
-3853,"Wuxi, Jiangsu, China",31.5776626,120.2952752,"China",NA,"Yixing, China",31.3495972,119.817253,"China",NA
+3852,"Suzhou, Jiangsu, China",31.311123,120.6212881,"China",NA,"Zhangjiagang, Jiangsu, China",31.8782976,120.55145950000001,"China",NA
+3853,"Wuxi, Jiangsu, China",31.5776626,120.2952752,"China",NA,"Yixing, Jiangsu, China",31.3495972,119.817253,"China",NA
 3854,"Wenzhou, Zhejiang, China",27.9963899,120.695345,"China",NA,"Guangzhou, Guangdong, China",23.1301964,113.2592945,"China",NA
 3855,"Jiaxing, Zhejiang, China",30.7474425,120.7510971,"China",NA,"Jiaxing, Zhejiang, China",30.7474425,120.7510971,"China",NA
 3856,"Ningbo, Zhejiang, China",29.8622194,121.6203873,"China",NA,"Shenzhen, Guangdong, China",22.5445741,114.0545429,"China",NA
@@ -2350,7 +2354,6 @@
 3947,"Moscow, Russia",55.625578,37.6063916,"Russia",NA,"Moscow, Russia",55.625578,37.6063916,"Russia",NA
 3948,"Montreal, Quebec, Canada",45.5031824,-73.5698065,"Canada",NA,"Lantana, Florida, United States",26.5865308,-80.052166,"United States","Florida"
 3949,"Horlivka, Ukraine",48.3058686,38.0027664,"Ukraine",NA,"Moscow, Russia",55.625578,37.6063916,"Russia",NA
-3952,"Cambridge, Ontario, Canada",43.3600536,-80.3123023,"Canada",NA,"Ontario, Canada",50.000678,-86.000977,"Canada",NA
 3953,"Mexico City, Mexico",19.3207722,-99.1514678,"Mexico",NA,"Mexico City, Mexico",19.3207722,-99.1514678,"Mexico",NA
 3955,"Los Angeles, California, United States",34.0536909,-118.242766,"United States","California","Beverly Hills, California, United States",34.0696501,-118.3963062,"United States","California"
 3956,"New York, New York, United States",40.7127281,-74.0060152,"United States","New York","Miami Beach, Florida, United States",25.7929198,-80.1353006,"United States","Florida"
@@ -2417,7 +2420,7 @@
 4046,"Chicago, Illinois, United States",41.8755616,-87.6244212,"United States","Illinois","Beverly Hills, California, United States",34.0696501,-118.3963062,"United States","California"
 4048,"New York, New York, United States",40.7127281,-74.0060152,"United States","New York","New York, New York, United States",40.7127281,-74.0060152,"United States","New York"
 4049,"New York, New York, United States",40.7127281,-74.0060152,"United States","New York","Miami, Florida, United States",25.7741728,-80.19362,"United States","Florida"
-4050,"Venice, Venice, Italy",45.5035386,12.3425797,"Italy",NA,"Venice, Italy",45.4371908,12.3345898,"Italy",NA
+4050,"Venice, Venice, Italy",45.5035386,12.3425797,"Italy",NA,"Venice, Venice, Italy",45.5035386,12.3425797,"Italy",NA
 4051,"Culver City, California, United States",34.0211224,-118.396466,"United States","California","Steamboat Springs, Colorado, United States",40.4848003,-106.831735,"United States","Colorado"
 4052,"Chicago, Illinois, United States",41.8755616,-87.6244212,"United States","Illinois","St. Louis, Missouri, United States",38.6280278,-90.1910154,"United States","Missouri"
 4054,"New York, New York, United States",40.7127281,-74.0060152,"United States","New York","San Francisco, California, United States",37.7792588,-122.4193286,"United States","California"
@@ -2456,7 +2459,7 @@
 4113,"Yantai, Shandong, China",37.461928,121.4425255,"China",NA,"Yantai, Shandong, China",37.461928,121.4425255,"China",NA
 4115,"Yichun, Jiangxi, China",28.3803015,115.0153957,"China",NA,"Zhongshan, Guangdong, China",22.5197073,113.3872302,"China",NA
 4116,"Huaiyuan County, Anhui, China",32.9706393,117.1994832,"China",NA,"Shenzhen, Guangdong, China",22.5445741,114.0545429,"China",NA
-4117,"Dashiqiao, Liaoning, China",40.6348183,122.5042794,"China",NA,"Yingkou, China",40.6747155,122.2357736,"China",NA
+4117,"Dashiqiao, Liaoning, China",40.6348183,122.5042794,"China",NA,"Yingkou, Liaoning, China",40.6747155,122.2357736,"China",NA
 4119,"Siping, Jilin, China",43.1669821,124.364739,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
 4120,"Dalian, Liaoning, China",39.740278000000004,122.255833,"China",NA,"Dalian, Liaoning, China",39.740278000000004,122.255833,"China",NA
 4123,"Buenos Aires, Argentina",-34.6095579,-58.3887904,"Argentina",NA,"Buenos Aires, Argentina",-34.6095579,-58.3887904,"Argentina",NA
@@ -2488,7 +2491,7 @@
 4173,"Jiayu County, Xianning, Hubei, China",29.9724209,113.9335326,"China",NA,"Guangzhou, Guangdong, China",23.1301964,113.2592945,"China",NA
 4174,"Xiamen, Fujian, China",24.5438732,118.0768065,"China",NA,"Manila, Philippines",14.5904492,120.9803621,"Philippines",NA
 4175,"Singapore, Singapore",1.357107,103.8194992,"Singapore",NA,"Singapore, Singapore",1.357107,103.8194992,"Singapore",NA
-4178,"Mitaka, Tokyo, Japan",35.6833926,139.5592421,"Japan",NA,"Tokyo, Japan",35.6768601,139.7638947,"Japan",NA
+4178,"Tokyo, Japan",35.6768601,139.7638947,"Japan",NA,"Tokyo, Japan",35.6768601,139.7638947,"Japan",NA
 4180,"Toronto, Ontario, Canada",43.6534817,-79.3839347,"Canada",NA,"Toronto, Ontario, Canada",43.6534817,-79.3839347,"Canada",NA
 4181,"Anshan, Liaoning, China",40.822222,122.8275,"China",NA,"Shanghai, China",31.2323437,121.4691024,"China",NA
 4186,"Suzhou, Jiangsu, China",31.311123,120.6212881,"China",NA,"Suzhou, Jiangsu, China",31.311123,120.6212881,"China",NA
@@ -2545,7 +2548,7 @@
 4286,"Shaoxing, China, China",30.0662503,120.4764712,"China",NA,"Shanghai, China",31.2323437,121.4691024,"China",NA
 4288,"Rheda-Wiedenbrück, Germany",51.841667,8.3,"Germany",NA,"Rheda-Wiedenbrück, Germany",51.841667,8.3,"Germany",NA
 4290,"Istanbul, Turkey",41.006381,28.9758715,"Turkey",NA,"Istanbul, Turkey",41.006381,28.9758715,"Turkey",NA
-4291,"Stockholm, Seden",59.3327881,18.0644881,"Seden",NA,"Geneva, Switzerland",46.2017559,6.1466014,"Switzerland",NA
+4291,"Stockholm, Sweden",59.3251172,18.0710935,"Sweden",NA,"Geneva, Switzerland",46.2017559,6.1466014,"Switzerland",NA
 4294,"Hatay, Turkey",36.3451332,36.0748022,"Turkey",NA,"Istanbul, Turkey",41.006381,28.9758715,"Turkey",NA
 4298,"Franca, São Paulo, Brazil",-20.5381768,-47.4009795,"Brazil",NA,"São Paulo, São Paulo, Brazil",-23.5506507,-46.6333824,"Brazil",NA
 4299,"Hue, Vietnam",16.4639321,107.5863388,"Vietnam",NA,"Ho Chi Minh City, Vietnam",10.7755254,106.7021047,"Vietnam",NA
@@ -2562,18 +2565,18 @@
 4311,"Mount Vernon, Illinois, United States",38.3172715,-88.9031201,"United States","Illinois","Dallas, Texas, United States",32.7762719,-96.7968559,"United States","Texas"
 4312,"Austin County, Texas, United States",29.8916488,-96.2443467,"United States","Texas","Austin, Texas, United States",30.2711286,-97.7436995,"United States","Texas"
 4313,"New York, New York, United States",40.7127281,-74.0060152,"United States","New York","Palm Beach, Florida, United States",26.6279798,-80.4494174,"United States","Florida"
-4316,"Zhunan Township, Miaoli County, Taiwan",24.683726,120.873384,"Taiwan",NA,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA
-4317,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA
+4316,"Zhunan Township, Miaoli County, Taiwan",24.683726,120.873384,"Taiwan",NA,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA
+4317,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA
 4320,"Nanzhou Township, Taiwan",22.4904956,120.5098258,"Taiwan",NA,"Hsinchu, Taiwan",24.8066333,120.9686833,"Taiwan",NA
 4321,"Lukang Township, Changhua, Taiwan",24.055092,120.431341,"Taiwan",NA,"Taichung, Taiwan",24.163162,120.6478282,"Taiwan",NA
-4322,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA,"Shanghai, China",31.2323437,121.4691024,"China",NA
-4323,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
+4322,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA,"Shanghai, China",31.2323437,121.4691024,"China",NA
+4323,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
 4330,"Tenghai, Guangdong, China",23.4694075,116.7515585,"China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
 4334,"Tripoli, Libya",32.896672,13.1777923,"Libya",NA,"Netanya, Israel",32.3073499,34.8628611,"Israel",NA
 4335,"Khoe, Sakhalin, Russia",51.3211171,142.1829357,"Russia",NA,"Moscow, Russia",55.625578,37.6063916,"Russia",NA
 4336,"Kashihara, Nara, Japan",34.5094067,135.792955,"Japan",NA,"Osaka, Japan",34.6937569,135.5014539,"Japan",NA
 4338,"Putilkovo, Moscow Oblast, Russia",55.8625,37.390278,"Russia",NA,"Moscow, Russia",55.625578,37.6063916,"Russia",NA
-4339,"Chongqing, Chongqing, China",30.8101669,108.4034084,"China",NA,"Chongqing, China",30.05518,107.8748712,"China",NA
+4339,"Chongqing, Chongqing, China",30.8101669,108.4034084,"China",NA,"Chongqing, Chongqing, China",30.8101669,108.4034084,"China",NA
 4340,"Chongqing, Chongqing, China",30.8101669,108.4034084,"China",NA,"Rolling Hills, California, United States",33.7668041,-118.3496623,"United States","California"
 4341,"Los Angeles, California, United States",34.0536909,-118.242766,"United States","California","Denver, Colorado, United States",39.7392364,-104.984862,"United States","Colorado"
 4342,"Endwell, New York, United States",42.1188252,-76.0225574,"United States","New York","Pittsburgh, Pennsylvania, United States",40.4416941,-79.9900861,"United States","Pennsylvania"
@@ -2617,7 +2620,7 @@
 4406,"Ala, Trento, Italy",45.7579008,11.0018179,"Italy",NA,"Milan, Italy",45.4641943,9.1896346,"Italy",NA
 4407,"Sulmona, L'Aquila, Italy",42.0474231,13.927011,"Italy",NA,"Melbourne, Australia",-37.8142454,144.9631732,"Australia",NA
 4413,"Frankenberg, Germany",50.9110365,13.0331023,"Germany",NA,"Battenberg, Germany",51.0323524,8.6112782,"Germany",NA
-4416,"Stockholm, Sweden",59.3251172,18.0710935,"Sweden",NA,"Monaco, Monaco",43.7323492,7.4276832,"Monaco",NA
+4416,"Stockholm, Sweden",59.3251172,18.0710935,"Sweden",NA,"Monaco",43.7323492,7.4276832,"Monaco",NA
 4418,"Manila, Philippines",14.5904492,120.9803621,"Philippines",NA,"Manila, Philippines",14.5904492,120.9803621,"Philippines",NA
 4419,"Madrid, Spain",40.416782,-3.703507,"Spain",NA,"Madrid, Spain",40.416782,-3.703507,"Spain",NA
 4421,"São Paulo, São Paulo, Brazil",-23.5506507,-46.6333824,"Brazil",NA,"São Paulo, São Paulo, Brazil",-23.5506507,-46.6333824,"Brazil",NA
@@ -2658,13 +2661,13 @@
 4477,"Jinjiang, Fujian, China",24.784435,118.5477505,"China",NA,"Quanzhou, Fujian, China",25.1901863,118.338717,"China",NA
 4478,"Wuwei, Anhui, China",31.262119,117.7803026,"China",NA,"Shenzhen, Guangdong, China",22.5445741,114.0545429,"China",NA
 4479,"Luoyang, Henan, China",34.6196539,112.4477046,"China",NA,"Zhengzhou, Henan, China",34.7472531,113.619321,"China",NA
-4482,"New Taipei City, Taiwan",25.063267,121.45788,"Taiwan",NA,"Los Angeles, California, United States",34.0536909,-118.242766,"United States","California"
-4484,"New Taipei City, Taiwan",25.063267,121.45788,"Taiwan",NA,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA
+4482,"New Taipei City, Taiwan",25.0125,121.465,"Taiwan",NA,"Los Angeles, California, United States",34.0536909,-118.242766,"United States","California"
+4484,"New Taipei City, Taiwan",25.0125,121.465,"Taiwan",NA,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA
 4486,"Changzhou, Jiangsu, China",31.8122623,119.9691539,"China",NA,"Shanghai, China",31.2323437,121.4691024,"China",NA
 4489,"Cangnan County, Wenzhou, Zhejiang, China",27.5184046,120.4232915,"China",NA,"Shanghai, China",31.2323437,121.4691024,"China",NA
 4490,"Cangnan County, Wenzhou, Zhejiang, China",27.5184046,120.4232915,"China",NA,"Shanghai, China",31.2323437,121.4691024,"China",NA
 4491,"Shanghai, China",31.2323437,121.4691024,"China",NA,"Guiyang, Guizhou, China",26.6499922,106.6246178,"China",NA
-4492,"Shunde District, Foshan, Guangdong, China",22.83056,113.21556,"China",NA,"Shenzhen, Guangdong, China",22.5445741,114.0545429,"China",NA
+4492,"Shunde, Guangdong, China",22.8054891,113.2894243,"China",NA,"Shenzhen, Guangdong, China",22.5445741,114.0545429,"China",NA
 4493,"Wujin, Jiangsu, China",31.7020406,119.9377542,"China",NA,"Shanghai, China",31.2323437,121.4691024,"China",NA
 4494,"Jinyun, Zhejiang, China",28.6615529,120.0869565,"China",NA,"Shanghai, China",31.2323437,121.4691024,"China",NA
 4495,"Dalian, Liaoning, China",39.740278000000004,122.255833,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
@@ -2674,10 +2677,10 @@
 4507,"Guangyuan, Sichuan, China",32.2685578,105.8395358,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
 4509,"Wenzhou, Zhejiang, China",27.9963899,120.695345,"China",NA,"Shanghai, China",31.2323437,121.4691024,"China",NA
 4510,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
-4512,"Jade Emperor Temple, Dongming County, Heze, Shandong, China",35.19228,115.07094,"China",NA,"Heze, China",35.2477266,115.4464761,"China",NA
+4512,"Dongming County, Heze, Shandong, China",35.19228,115.07094,"China",NA,"Heze, Shandong, China",35.2477266,115.4464761,"China",NA
 4513,"Ningbo, Zhejiang, China",29.8622194,121.6203873,"China",NA,"Ningbo, Zhejiang, China",29.8622194,121.6203873,"China",NA
 4514,"Renshou, Sichuan, China",29.9811089,104.2204271,"China",NA,"Chengdu, Sichuan, China",30.659867,104.063315,"China",NA
-4515,"Shenhe District, Shenyang City, Liaoning, China",41.8106934,123.5263816,"China",NA,"Chengdu, Sichuan, China",30.659867,104.063315,"China",NA
+4515,"Shenyang, Liaoning, China",41.8026095,123.4279105,"China",NA,"Chengdu, Sichuan, China",30.659867,104.063315,"China",NA
 4517,"Shantou, Guangdong, China",23.3563921,116.6775856,"China",NA,"Shenzhen, Guangdong, China",22.5445741,114.0545429,"China",NA
 4518,"Shantou, Guangdong, China",23.3563921,116.6775856,"China",NA,"Shenzhen, Guangdong, China",22.5445741,114.0545429,"China",NA
 4519,"Huanggang, Hubei, China",30.4560187,114.8673226,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
@@ -2699,7 +2702,7 @@
 4550,"Wuxi, Jiangsu, China",31.5776626,120.2952752,"China",NA,"Weihai, Shandong, China",37.5120997,122.1152599,"China",NA
 4551,"Weihai, Shandong, China",37.5120997,122.1152599,"China",NA,"Wuxi, Jiangsu, China",31.5776626,120.2952752,"China",NA
 4552,"Xi'an, Shaanxi, China",34.261004,108.9423363,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
-4554,"Minqin County, Gansu Province, China",38.753616,103.168877,"China",NA,"Alxa, China",40.480869,102.84579,"China",NA
+4554,"Minqin County, Gansu, China",38.753616,103.168877,"China",NA,"Alxa, Inner Mongolia, China",40.480869,102.84579,"China",NA
 4556,"Yibin, Sichuan, China",28.58689,104.718661,"China",NA,"Qingzhou, China",36.6843271,118.47381179999999,"China",NA
 4558,"Bazhou, Hebei, China",39.0776239,116.6039332,"China",NA,"Langfang, Hebei, China",39.5302055,116.6926134,"China",NA
 4559,"Jieyang, Guangdong, China",23.553156,116.3680354,"China",NA,"Jiaozuo, China",35.1375,113.143889,"China",NA
@@ -2715,8 +2718,8 @@
 4575,"Philadelphia, Pennsylvania, United States",39.9527237,-75.1635262,"United States","Pennsylvania","Hobe Sound, Florida, United States",27.080492,-80.139918,"United States","Florida"
 4577,"Kinmen, Fujian, China",24.91046,118.57726,"China",NA,"Singapore, Singapore",1.357107,103.8194992,"Singapore",NA
 4581,"Changhua, Taiwan",24.0755667,120.5444667,"Taiwan",NA,"Tianjin, Tianjin, China",39.0844897,117.1956724,"China",NA
-4582,"Changhua, Taiwan",24.0755667,120.5444667,"Taiwan",NA,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA
-4583,"Yongjing Township, Changhua County, Taiwan",23.9245167,120.5479333,"Taiwan",NA,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA
+4582,"Changhua, Taiwan",24.0755667,120.5444667,"Taiwan",NA,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA
+4583,"Yongjing Township, Changhua County, Taiwan",23.9245167,120.5479333,"Taiwan",NA,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA
 4584,"Changhua, Taiwan",24.0755667,120.5444667,"Taiwan",NA,"Shanghai, China",31.2323437,121.4691024,"China",NA
 4585,"Shenyang, Liaoning, China",41.8026095,123.4279105,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
 4588,"Baoding, Hebei, China",38.8579735,115.490696,"China",NA,"Baoding, Hebei, China",38.8579735,115.490696,"China",NA
@@ -2754,7 +2757,7 @@
 4655,"Rastdorf, Germany",52.9130605,7.7097399,"Germany",NA,"Aurich, Germany",53.5122854,7.3915284,"Germany",NA
 4656,"New York, New York, United States",40.7127281,-74.0060152,"United States","New York","Montecito, California, United States",34.4366626,-119.6320753,"United States","California"
 4657,"Salt Lake City, Utah, United States",40.7596198,-111.886797,"United States","Utah","Austin, Texas, United States",30.2711286,-97.7436995,"United States","Texas"
-4658,"Vienna, Austria",48.2083537,16.3725042,"Austria",NA,"Monaco, Monaco",43.7323492,7.4276832,"Monaco",NA
+4658,"Vienna, Austria",48.2083537,16.3725042,"Austria",NA,"Monaco",43.7323492,7.4276832,"Monaco",NA
 4661,"Hong Kong, China",22.2793278,114.1628131,"China",NA,"Shenzhen, Guangdong, China",22.5445741,114.0545429,"China",NA
 4663,"Huazhou, Guangdong, China",21.8302699,110.5300134,"China",NA,"Shenzhen, Guangdong, China",22.5445741,114.0545429,"China",NA
 4666,"Shantou, Guangdong, China",23.3563921,116.6775856,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
@@ -2770,18 +2773,18 @@
 4679,"Hefei, Anhui, China",31.8665676,117.281428,"China",NA,"Hefei, Anhui, China",31.8665676,117.281428,"China",NA
 4680,"Hefei, Anhui, China",31.8665676,117.281428,"China",NA,"Hefei, Anhui, China",31.8665676,117.281428,"China",NA
 4681,"Hong Kong, China",22.2793278,114.1628131,"China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
-4682,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA
+4682,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA
 4684,"Hong Kong, China",22.2793278,114.1628131,"China",NA,"Xiamen, Fujian, China",24.5438732,118.0768065,"China",NA
 4685,"Chongqing, Chongqing, China",30.8101669,108.4034084,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
 4690,"Xiantao, Hubei, China",30.364029,113.4486702,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
 4691,"Bazhong, Sichuan, China",32.040248,107.062301,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
-4693,"Emeishan, Sichuan, China",29.5226655,103.3368637,"China",NA,"Chongqing, China",30.05518,107.8748712,"China",NA
+4693,"Emeishan, Sichuan, China",29.5226655,103.3368637,"China",NA,"Chongqing, Chongqing, China",30.8101669,108.4034084,"China",NA
 4694,"Zhuji, Zhejiang, China",29.7112121,120.2419855,"China",NA,"Shaoxing, Zhejiang, China",29.9992425,120.576854,"China",NA
 4695,"Ninghai, Ningbo, Zhejiang, China",29.2907774,121.4252252,"China",NA,"Ningbo, Zhejiang, China",29.8622194,121.6203873,"China",NA
 4702,"Daye, Hubei, China",30.0985567,114.9748074,"China",NA,"Daye, Hubei, China",30.0985567,114.9748074,"China",NA
 4705,"Guangzhou, Guangdong, China",23.1301964,113.2592945,"China",NA,"Guangzhou, Guangdong, China",23.1301964,113.2592945,"China",NA
 4709,"Wuhu, Anhui, China",31.1800568,118.2141777,"China",NA,"Wuhu, Anhui, China",31.1800568,118.2141777,"China",NA
-4710,"Gucheng County, Hebei, China",37.3490348,115.9646818,"China",NA,"Shijiazhuang, China",38.0429742,114.5088385,"China",NA
+4710,"Gucheng County, Hebei, China",37.3490348,115.9646818,"China",NA,"Shijiazhuang, Hebei, China",38.0429742,114.5088385,"China",NA
 4713,"Fuzhou, Fujian, China",26.0774954,119.2918215,"China",NA,"Xiamen, Fujian, China",24.5438732,118.0768065,"China",NA
 4715,"Shaoxing, Zhejiang, China",29.9992425,120.576854,"China",NA,"Lianyungang, Jiangsu, China",34.5933134,119.2171662,"China",NA
 4717,"Dandong, Liaoning, China",40.5791477,124.4407146,"China",NA,"Shenyang, Liaoning, China",41.8026095,123.4279105,"China",NA
@@ -2791,7 +2794,7 @@
 4723,"New Haven, Connecticut, United States",41.3082138,-72.9250518,"United States","Connecticut","Palm Beach, Florida, United States",26.6279798,-80.4494174,"United States","Florida"
 4724,"Boulder, Colorado, United States",40.0149856,-105.270545,"United States","Colorado","Wilson, Wyoming, United States",43.4989783,-110.8746563,"United States","Wyoming"
 4725,"Bern, Switzerland",46.9484742,7.4521749,"Switzerland",NA,"Wilson, Wyoming, United States",43.4989783,-110.8746563,"United States","Wyoming"
-4726,"Wuxi, Jiangsu, China",31.5776626,120.2952752,"China",NA,"Ningguo, China",30.4832799,118.9560438,"China",NA
+4726,"Wuxi, Jiangsu, China",31.5776626,120.2952752,"China",NA,"Ningguo, Anhui, China",30.4832799,118.9560438,"China",NA
 4730,"Xiangyang, Hubei, China",32.010998,112.1163785,"China",NA,"Shenzhen, Guangdong, China",22.5445741,114.0545429,"China",NA
 4732,"Wenzhou, Zhejiang, China",27.9963899,120.695345,"China",NA,"Wenzhou, Zhejiang, China",27.9963899,120.695345,"China",NA
 4733,"Wenzhou, Zhejiang, China",27.9963899,120.695345,"China",NA,"Wenzhou, Zhejiang, China",27.9963899,120.695345,"China",NA
@@ -2819,7 +2822,7 @@
 4781,"Huzhou, Zhejiang, China",30.8942995,120.0851114,"China",NA,"Hangzhou, Zhejiang, China",30.2489634,120.2052342,"China",NA
 4782,"Ningbo, Zhejiang, China",29.8622194,121.6203873,"China",NA,"Ningbo, Zhejiang, China",29.8622194,121.6203873,"China",NA
 4783,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
-4784,"Shanghai, China",31.2323437,121.4691024,"China",NA,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA
+4784,"Shanghai, China",31.2323437,121.4691024,"China",NA,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA
 4786,"Nanjing, Jiangsu, China",32.0438284,118.7788631,"China",NA,"San Francisco, California, United States",37.7792588,-122.4193286,"United States","California"
 4787,"Zibo, Shandong, China",36.8129564,118.0488401,"China",NA,"Guangzhou, Guangdong, China",23.1301964,113.2592945,"China",NA
 4789,"Chaozhou, Guangdong, China",23.656593,116.6204223,"China",NA,"Guangzhou, Guangdong, China",23.1301964,113.2592945,"China",NA
@@ -2831,10 +2834,10 @@
 4801,"Seto City, Aichi, Japan",35.2253681,137.1010248,"Japan",NA,"Tokyo, Japan",35.6768601,139.7638947,"Japan",NA
 4805,"Kunming, Yunnan, China",25.0363006,102.7086139,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
 4809,"Ube, Yamaguchi, Japan",33.9518498,131.2472243,"Japan",NA,"Tokyo, Japan",35.6768601,139.7638947,"Japan",NA
-4810,"Yanchi County, Ningxia, China",37.6215334,107.0518858,"China",NA,"Yinchuan, China",38.4852037,106.2261926,"China",NA
+4810,"Yanchi County, Ningxia, China",37.6215334,107.0518858,"China",NA,"Yinchuan, Ningxia, China",38.4852037,106.2261926,"China",NA
 4811,"New York, New York, United States",40.7127281,-74.0060152,"United States","New York","Yorktown Heights, New York, United States",41.270178,-73.7753539,"United States","New York"
 4812,"Shunde, Guangdong, China",22.8054891,113.2894243,"China",NA,"Foshan, Guangdong, China",23.0239788,113.1159558,"China",NA
-4815,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA,"Los Altos Hills, California, United States",37.3796627,-122.137463,"United States","California"
+4815,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA,"Los Altos Hills, California, United States",37.3796627,-122.137463,"United States","California"
 4817,"Hefei, Anhui, China",31.8665676,117.281428,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
 4818,"Wenzhou, Zhejiang, China",27.9963899,120.695345,"China",NA,"Wenzhou, Zhejiang, China",27.9963899,120.695345,"China",NA
 4822,"Chengdu, Sichuan, China",30.659867,104.063315,"China",NA,"Chengdu, Sichuan, China",30.659867,104.063315,"China",NA
@@ -2847,7 +2850,7 @@
 4833,"Meizhou, Guangdong, China",24.2918414,116.1171428,"China",NA,"Guangzhou, Guangdong, China",23.1301964,113.2592945,"China",NA
 4834,"Meizhou, Guangdong, China",24.2918414,116.1171428,"China",NA,"Guangzhou, Guangdong, China",23.1301964,113.2592945,"China",NA
 4836,"Yiyang, Hunan, China",28.438707,112.056694,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
-4841,"Zhuji County, Shaoxing City, Zhejiang, China",29.70167,120.6,"China",NA,"Hangzhou, Zhejiang, China",30.2489634,120.2052342,"China",NA
+4841,"Zhuji, Zhejiang, China",29.7112121,120.2419855,"China",NA,"Hangzhou, Zhejiang, China",30.2489634,120.2052342,"China",NA
 4842,"Shantou, Guangdong, China",23.3563921,116.6775856,"China",NA,"Shenzhen, Guangdong, China",22.5445741,114.0545429,"China",NA
 4844,"Santiago, Chile",-33.4377756,-70.6504502,"Chile",NA,"Santiago, Chile",-33.4377756,-70.6504502,"Chile",NA
 4845,"New York, New York, United States",40.7127281,-74.0060152,"United States","New York","Haverford, Pennsylvania, United States",40.0131672,-75.2943516,"United States","Pennsylvania"
@@ -2864,9 +2867,9 @@
 4864,"Smolensk, Russia",54.7789701,32.0471812,"Russia",NA,"Moscow, Russia",55.625578,37.6063916,"Russia",NA
 4865,"Yueyang, Hunan, China",29.060703,113.348653,"China",NA,"Changsha, Hunan, China",28.1450774,113.2384362,"China",NA
 4867,"Haokouzhen, Qianjiang, Hubei, China",30.38128,112.63993,"China",NA,"Guangzhou, Guangdong, China",23.1301964,113.2592945,"China",NA
-4870,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA
+4870,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA
 4872,"Hong Kong, China",22.2793278,114.1628131,"China",NA,"Hong Kong, China",22.2793278,114.1628131,"China",NA
-4873,"Jining, Shandong, China",35.4125047,116.5849266,"China",NA,"Yanzhou, China",36.602796,109.4873978,"China",NA
+4873,"Jining, Shandong, China",35.4125047,116.5849266,"China",NA,"Yanzhou, Shandong, China",36.602796,109.4873978,"China",NA
 4879,"Ruian, Zhejiang, China",27.7809047,120.6512652,"China",NA,"Wenzhou, Zhejiang, China",27.9963899,120.695345,"China",NA
 4880,"Detroit, Michigan, United States",42.3315509,-83.046640300000007,"United States","Michigan","Ypsilanti, Michigan, United States",42.241051,-83.6117646,"United States","Michigan"
 4881,"Shaoxing, Zhejiang, China",29.9992425,120.576854,"China",NA,"Shaoxing, Zhejiang, China",29.9992425,120.576854,"China",NA
@@ -2887,7 +2890,7 @@
 4909,"Derbent, Dagestan, Russia",42.057858,48.2887648,"Russia",NA,"Moscow, Russia",55.625578,37.6063916,"Russia",NA
 4915,"Beersheba, Israel",31.2457442,34.7925181,"Israel",NA,"Atlanta, Georgia, United States",33.7544657,-84.3898151,"United States","Georgia"
 4916,"Detroit, Michigan, United States",42.3315509,-83.046640300000007,"United States","Michigan","Jacksonville, Florida, United States",30.3321838,-81.655651,"United States","Florida"
-4919,"Milan, Italy",45.4641943,9.1896346,"Italy",NA,"Monaco, Monaco",43.7323492,7.4276832,"Monaco",NA
+4919,"Milan, Italy",45.4641943,9.1896346,"Italy",NA,"Monaco",43.7323492,7.4276832,"Monaco",NA
 4920,"Huangjincun, Nantong, Jiangsu, China",32.09168,120.9837,"China",NA,"Nantong, Jiangsu, China",31.9827896,120.8904588,"China",NA
 4921,"Prince Albert, Saskatchewan, Canada",53.201097,-105.748901,"Canada",NA,"San Francisco, California, United States",37.7792588,-122.4193286,"United States","California"
 4923,"Haifa, Israel",32.8191218,34.9983856,"Israel",NA,"Los Altos, California, United States",37.3790629,-122.116578,"United States","California"
@@ -2896,8 +2899,8 @@
 4926,"Windsor, Ontario, Canada",42.2858536,-82.9780695,"Canada",NA,"Windsor, Ontario, Canada",42.2858536,-82.9780695,"Canada",NA
 4927,"Windsor, Ontario, Canada",42.2858536,-82.9780695,"Canada",NA,"Windsor, Ontario, Canada",42.2858536,-82.9780695,"Canada",NA
 4929,"Highland Park, Illinois, United States",42.1836719,-87.7993245,"United States","Illinois","Chicago, Illinois, United States",41.8755616,-87.6244212,"United States","Illinois"
-4931,"Shaodong, Hunan, China",27.1972513,111.8459833,"China",NA,"Yongzhou, China",25.781344,111.6979977,"China",NA
-4933,"Shaodong, Hunan, China",27.1972513,111.8459833,"China",NA,"Shaoyang, China",26.9443424,110.9631102,"China",NA
+4931,"Shaodong, Hunan, China",27.1972513,111.8459833,"China",NA,"Yongzhou, Hunan, China",25.781344,111.6979977,"China",NA
+4933,"Shaodong, Hunan, China",27.1972513,111.8459833,"China",NA,"Shaoyang, Hunan, China",26.9443424,110.9631102,"China",NA
 4934,"Shenzhen, Guangdong, China",22.5445741,114.0545429,"China",NA,"Shenzhen, Guangdong, China",22.5445741,114.0545429,"China",NA
 4938,"Ningde, Fujian, China",27.0143281,119.4385501,"China",NA,"Ningde, Fujian, China",27.0143281,119.4385501,"China",NA
 4939,"Guangzhou, Guangdong, China",23.1301964,113.2592945,"China",NA,"Guangzhou, Guangdong, China",23.1301964,113.2592945,"China",NA
@@ -2920,7 +2923,7 @@
 4975,"Shanghai, China",31.2323437,121.4691024,"China",NA,"Singapore, Singapore",1.357107,103.8194992,"Singapore",NA
 4977,"Chaozhou, Guangdong, China",23.656593,116.6204223,"China",NA,"Chaozhou, Guangdong, China",23.656593,116.6204223,"China",NA
 4980,"Tonglu, Zhejiang, China",29.7965627,119.6876858,"China",NA,"Shanghai, China",31.2323437,121.4691024,"China",NA
-4981,"Chongqing, Chongqing, China",30.8101669,108.4034084,"China",NA,"Chongqing, China",30.05518,107.8748712,"China",NA
+4981,"Chongqing, Chongqing, China",30.8101669,108.4034084,"China",NA,"Chongqing, Chongqing, China",30.8101669,108.4034084,"China",NA
 4982,"Baotou, Inner Mongolia, China",40.6174777,109.944912,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
 4984,"Fuzhou, Fujian, China",26.0774954,119.2918215,"China",NA,"Fuzhou, Fujian, China",26.0774954,119.2918215,"China",NA
 4986,"Chiping, Shandong, China",36.5865512,116.2406737,"China",NA,"Liaocheng, Shandong, China",36.4441808,115.9642007,"China",NA
@@ -2940,7 +2943,7 @@
 5005,"Ürümqi, Xinjiang, China",43.8244074,87.6139038,"China",NA,"San Francisco, California, United States",37.7792588,-122.4193286,"United States","California"
 5007,"Xi'an, Shaanxi, China",34.261004,108.9423363,"China",NA,"Xi'an, Shaanxi, China",34.261004,108.9423363,"China",NA
 5010,"Shawan County, Xinjiang, China",44.4193,85.53523,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
-5013,"Wenzhou, Zhejiang, China",27.9963899,120.695345,"China",NA,"Taipei, Taiwan",25.0375198,121.5636796,"Taiwan",NA
+5013,"Wenzhou, Zhejiang, China",27.9963899,120.695345,"China",NA,"Taipei, Taiwan",25.0375,121.5625,"Taiwan",NA
 5017,"Ningbo, Zhejiang, China",29.8622194,121.6203873,"China",NA,"Ningbo, Zhejiang, China",29.8622194,121.6203873,"China",NA
 5020,"Luoyuan, Fujian, China",26.4929647,119.5448198,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
 5022,"Iultin, Russia",67.8759739,-178.733225,"Russia",NA,"Kyiv, Ukraine",50.4500336,30.5241361,"Ukraine",NA
@@ -2957,7 +2960,7 @@
 5051,"Hefei, Anhui, China",31.8665676,117.281428,"China",NA,"Hefei, Anhui, China",31.8665676,117.281428,"China",NA
 5054,"Lijiang, Yunnan, China",26.8595868,100.2249797,"China",NA,"Beijing, Beijing, China",39.9057136,116.3912972,"China",NA
 5055,"Wuxi, Jiangsu, China",31.5776626,120.2952752,"China",NA,"Wuxi, Jiangsu, China",31.5776626,120.2952752,"China",NA
-5056,"Shantou, Guangdong, China",23.3563921,116.6775856,"China",NA,"Zhangjiagang, China",31.8782976,120.55145950000001,"China",NA
+5056,"Shantou, Guangdong, China",23.3563921,116.6775856,"China",NA,"Zhangjiagang, Jiangsu, China",31.8782976,120.55145950000001,"China",NA
 5057,"Shaoxing, Zhejiang, China",29.9992425,120.576854,"China",NA,"Shaoxing, Zhejiang, China",29.9992425,120.576854,"China",NA
 5059,"Fuzhou, Fujian, China",26.0774954,119.2918215,"China",NA,"Shenzhen, Guangdong, China",22.5445741,114.0545429,"China",NA
 5060,"Liuhuang, Fengshun County, Meizhou, Guangdong, China",23.9159398,116.4601492,"China",NA,"Guangzhou, Guangdong, China",23.1301964,113.2592945,"China",NA
@@ -3029,7 +3032,7 @@
 6024,"Fort Worth, Texas, United States",32.753177,-97.3327459,"United States","Texas","Houston, Texas, United States",29.7589382,-95.3676974,"United States","Texas"
 6025,"San Francisco, California, United States",37.7792588,-122.4193286,"United States","California","San Francisco, California, United States",37.7792588,-122.4193286,"United States","California"
 6032,"Xinchang, Zhejiang, China",29.5031469,120.8986631,"China",NA,"Shanghai, China",31.2323437,121.4691024,"China",NA
-6035,"Wen County, Gansu, China",32.9259184,104.782338,"China",NA,"Huizhou, China",23.1125153,114.4127007,"China",NA
+6035,"Wen County, Gansu, China",32.9259184,104.782338,"China",NA,"Huizhou, Guangdong, China",23.1125153,114.4127007,"China",NA
 6037,"Brighton, United Kingdom",50.8356838,-0.2939213,"United Kingdom",NA,"San Francisco, California, United States",37.7792588,-122.4193286,"United States","California"
 6040,"Crest, Drôme, France",44.7282675,5.0236641,"France",NA,"Paris, France",48.8588897,2.320041,"France",NA
 6041,"Somerville, Massachusetts, United States",42.3875968,-71.0994968,"United States","Massachusetts","Winchester, Massachusetts, United States",42.4523178,-71.1369982,"United States","Massachusetts"
@@ -3101,4 +3104,4 @@
 6196,"New York, New York, United States",40.7127281,-74.0060152,"United States","New York","Miami, Florida, United States",25.7741728,-80.19362,"United States","Florida"
 6202,"Appleton, Wisconsin, United States",44.2613967,-88.4069744,"United States","Wisconsin","Chicago, Illinois, United States",41.8755616,-87.6244212,"United States","Illinois"
 6204,"Yiwu, Zhejiang, China",29.3093002,120.0703805,"China",NA,"Hangzhou, Zhejiang, China",30.2489634,120.2052342,"China",NA
-6205,"Chongqing, Chongqing, China",30.8101669,108.4034084,"China",NA,"Chongqing, China",30.05518,107.8748712,"China",NA
+6205,"Chongqing, Chongqing, China",30.8101669,108.4034084,"China",NA,"Chongqing, Chongqing, China",30.8101669,108.4034084,"China",NA
